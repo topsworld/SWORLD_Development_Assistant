@@ -1,0 +1,100 @@
+﻿{
+    "BootLoader": {
+        "type_ID": "F",
+        "type_Name": "引导程序",
+        "group_ID": "0xFFFF",
+        "group_Name": "BootLoader",
+        "group_Name_CN": "BootLoader引导程序",
+        "group_Sensor": "Lite",
+        "Info": [
+            {
+                "col_Version": "V1.0L",
+                "col_Size": "2KB",
+                "col_Time": "2019.01.01",
+                "col_Stat": "已下载"
+            }
+        ]
+    },
+    "Program": [
+        {
+            "type_ID": "0",
+            "type_Name": "无线通信固件",
+            "group_ID": "0x0008",
+            "group_Name": "CAN_WCB_ZIGBEE_EBYTE_E75",
+            "group_Name_CN": "EBYTE E75 ZigBee通讯固件",
+            "group_Sensor": "EBYTE E75",
+            "Info": [
+                {
+                    "col_Version": "V19.01.01.01",
+                    "col_Size": "20KB",
+                    "col_Time": "2019.01.01",
+                    "col_Stat": "已下载"
+                }
+            ]
+        },
+        {
+            "type_ID": "1",
+            "type_Name": "数据采集固件",
+            "group_ID": "0x0100",
+            "group_Name": "CAN_DAB_SLTP_SLHM_MS_10",
+            "group_Name_CN": "MS-10土壤温湿度传感器固件",
+            "group_Sensor": "MS-10",
+            "Info": [
+                {
+                    "col_Version": "V19.01.01.01",
+                    "col_Size": "20KB",
+                    "col_Time": "2019.01.01",
+                    "col_Stat": "已下载"
+                }
+            ]
+        },
+        {
+            "type_ID": "1",
+            "type_Name": "数据采集固件",
+            "group_ID": "0x0108",
+            "group_Name": "CAN_DAB_EVTP_EVHM_SHT10",
+            "group_Name_CN": "SHT10环境温湿度传感器固件",
+            "group_Sensor": "SHT10",
+            "Info": [
+                {
+                    "col_Version": "V19.01.01.01",
+                    "col_Size": "20KB",
+                    "col_Time": "2019.01.01",
+                    "col_Stat": "已下载"
+                }
+            ]
+        },
+        {
+            "type_ID": "1",
+            "type_Name": "数据采集固件",
+            "group_ID": "0x0110",
+            "group_Name": "CAN_DAB_LTIT_B_LUX_V30",
+            "group_Name_CN": "B-LUX-V30光照强度传感器固件",
+            "group_Sensor": "B-LUX-V30",
+            "Info": [
+                {
+                    "col_Version": "V19.01.01.01",
+                    "col_Size": "20KB",
+                    "col_Time": "2019.01.01",
+                    "col_Stat": "已下载"
+                }
+            ]
+        },
+        {
+            "type_ID": "3",
+            "type_Name": "数据显示固件",
+            "group_ID": "0x0300",
+            "group_Name": "CAN_DDB_ZJY_IPS_0_96",
+            "group_Name_CN": "中景园0.96寸IPS显示固件",
+            "group_Sensor": "中景园0.96寸IPS",
+            "Info": [
+                {
+                    "col_Version": "V19.01.01.01",
+                    "col_Size": "20KB",
+                    "col_Time": "2019.01.01",
+                    "col_Stat": "已下载"
+                }
+            ]
+        }
+    ]
+}

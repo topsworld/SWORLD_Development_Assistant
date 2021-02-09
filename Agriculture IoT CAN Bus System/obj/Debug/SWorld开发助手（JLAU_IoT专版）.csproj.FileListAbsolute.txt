@@ -1,0 +1,60 @@
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Frm_Main.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Properties.Resources.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.GenerateResource.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.CoreCompileInputs.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe.config
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Add_Edit.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Version_Info.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csprojAssemblyReference.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Management.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Type_Add_Edit.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Group_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe.config
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csprojAssemblyReference.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Frm_Main.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Management.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Group_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Type_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Version_Info.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Properties.Resources.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.GenerateResource.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.CoreCompileInputs.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe.config
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csprojAssemblyReference.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Frm_Main.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Management.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Group_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Type_Add_Edit.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Version_Info.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Properties.Resources.resources
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.GenerateResource.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.CoreCompileInputs.cache
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\0 项目文件\18-11-23--串口程序下载器\4 SWorld串口下载器\0 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+E:\00 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe.config
+E:\00 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\00 中文版\Agriculture IoT CAN Bus System\bin\Debug\SWorld开发助手（JLAU_IoT专版）.pdb
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csprojAssemblyReference.cache
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Frm_Main.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Add_Edit.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Firmware_Management.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Group_Add_Edit.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Type_Add_Edit.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.My_Form.Frm_Version_Info.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\Agriculture_IoT_CAN_Bus_System.Properties.Resources.resources
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.GenerateResource.cache
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.csproj.CoreCompileInputs.cache
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.exe
+E:\00 中文版\Agriculture IoT CAN Bus System\obj\Debug\SWorld开发助手（JLAU_IoT专版）.pdb

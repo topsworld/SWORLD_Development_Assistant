@@ -1,0 +1,14 @@
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\GMap_Demo.exe.config
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\GMap_Demo.exe
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\GMap_Demo.pdb
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\AjaxMin.dll
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\GMap.NET.Core.dll
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.csprojAssemblyReference.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.Form1.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.Properties.Resources.resources
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.csproj.GenerateResource.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.csproj.CoreCompileInputs.cache
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.csproj.CopyComplete
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.exe
+C:\Users\97007\Desktop\嵌入式项目\18-11-23--串口程序下载器\4 SWorld串口下载器\SWorld_Downloader\GMap_Demo\obj\Debug\GMap_Demo.pdb

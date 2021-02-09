@@ -1,0 +1,15 @@
+E:\00 中文版\SWORLD版本管理助手\bin\Debug\SWORLD版本管理助手.exe.config
+E:\00 中文版\SWORLD版本管理助手\bin\Debug\SWORLD版本管理助手.exe
+E:\00 中文版\SWORLD版本管理助手\bin\Debug\SWORLD版本管理助手.pdb
+E:\00 中文版\SWORLD版本管理助手\bin\Debug\Renci.SshNet.dll
+E:\00 中文版\SWORLD版本管理助手\bin\Debug\Renci.SshNet.xml
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.csprojAssemblyReference.cache
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.Frm_Main.resources
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.Properties.Resources.resources
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.csproj.GenerateResource.cache
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.csproj.CoreCompileInputs.cache
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.csproj.CopyComplete
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.exe
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.pdb
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.MyForm.SoftwareAdd.resources
+E:\00 中文版\SWORLD版本管理助手\obj\Debug\SWORLD版本管理助手.MyForm.VersionAdd.resources

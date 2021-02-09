@@ -1,0 +1,13 @@
+{
+  "First_Run_Flag": true,
+  "BaudRate": 8,
+  "BL_DL_Address": "08000000",
+  "Firmware_DL_Address": "08006000",
+  "Sys_Run_Address": "08000000",
+  "Msg_Show_Time": false,
+  "DL_Check": true,
+  "DL_Dir_Run": true,
+  "Start_Check_Update": true,
+  "Login_Name": "",
+  "Login_PWD": ""
+}
