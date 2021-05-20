@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SWORLD开发助手.Class
+namespace SWorld_Downloader.Class
 {
     public class Cls_USBWatcher
     {

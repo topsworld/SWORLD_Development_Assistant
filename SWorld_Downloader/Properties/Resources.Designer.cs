@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SWORLD开发助手.Properties {
+namespace SWorld_Downloader.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SWORLD开发助手.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SWORLD开发助手.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SWorld_Downloader.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace SWORLD开发助手.Properties {
         }
         
         /// <summary>
-        ///   查找类似 SWORLD开发助手 的本地化字符串。
+        ///   查找类似 SWorld开发助手 的本地化字符串。
         /// </summary>
         internal static string AppName {
             get {
@@ -290,31 +290,11 @@ namespace SWORLD开发助手.Properties {
         }
         
         /// <summary>
-        ///   查找类似 V1.1 的本地化字符串。
+        ///   查找类似 V1.0 的本地化字符串。
         /// </summary>
         internal static string Version {
             get {
                 return ResourceManager.GetString("Version", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap 微信 {
-            get {
-                object obj = ResourceManager.GetObject("微信", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap 支付宝 {
-            get {
-                object obj = ResourceManager.GetObject("支付宝", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

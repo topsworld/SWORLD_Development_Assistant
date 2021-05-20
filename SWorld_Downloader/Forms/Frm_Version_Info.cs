@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SWORLD开发助手.Forms
+namespace SWorld_Downloader.Forms
 {
     public partial class Frm_Version_Info : Form
     {

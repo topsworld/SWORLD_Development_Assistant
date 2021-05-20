@@ -226,14 +226,14 @@
   <metadata name="Tmr_Debug_Resend_M.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 46</value>
   </metadata>
-  <data name="Tbx_Help.Text" xml:space="preserve">
+  <data name="textBox14.Text" xml:space="preserve">
     <value>一、用户协议
 使用该软件则默认您已经同意了以下协议：
 1.本软件为免费软件
 2.你可以免费任意使用，拷贝，传递本软件
 3.不可对本软件进行逆向工程
 4.对使用软件所产生的任何后果，由用户自己承担
-5.最终解释权归 SWorld工作室 所有
+5.最终解释权归 SWORLD 所有
 
 运行环境：.NET Framework 4.0 
 
@@ -278,9 +278,11 @@
 1.语言设置，在右下角设置处，可以设置软件的语言，目前支持中文，英文，中文繁体
 2.保存窗口编码方式设置，在右下角设置处，选择编码方式，保存窗口接收的数据就是对应的编码方式
 4.恢复默认设置，将软件的设置信息恢复到默认状态
-5.修改字体大小背景色，在右下角设置处修改
-</value>
+5.修改字体大小背景色，在右下角设置处修改</value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>87</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAA4AICAQAAEABADoAgAA5gAAABAQEAABAAQAKAEAAM4DAAAwMAAAAQAIAKgOAAD2BAAAICAAAAEA

@@ -39,10 +39,11 @@ namespace SWORLD版本管理助手
             this.Lbx_Software = new System.Windows.Forms.ListBox();
             this.Gbx_RemoteOperate = new System.Windows.Forms.GroupBox();
             this.Btn_ServiceConfig = new System.Windows.Forms.Button();
+            this.Tbx_RemotePath = new System.Windows.Forms.TextBox();
+            this.Lab_SoftwarePath = new System.Windows.Forms.Label();
             this.Tbx_HostIP = new System.Windows.Forms.TextBox();
             this.Tbx_UserName = new System.Windows.Forms.TextBox();
             this.Tbx_PassWord = new System.Windows.Forms.TextBox();
-            this.Tbx_RemotePath = new System.Windows.Forms.TextBox();
             this.Gbx_Connect = new System.Windows.Forms.GroupBox();
             this.Tbx_HostPort = new System.Windows.Forms.TextBox();
             this.Lab_Status = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@ namespace SWORLD版本管理助手
             this.Lab_PassWord = new System.Windows.Forms.Label();
             this.Lab_UserName = new System.Windows.Forms.Label();
             this.Lab_HostInfo = new System.Windows.Forms.Label();
-            this.Lab_SoftwarePath = new System.Windows.Forms.Label();
             this.Btn_SoftwareUpdate = new System.Windows.Forms.Button();
             this.Btn_SoftwareDelete = new System.Windows.Forms.Button();
             this.Btn_SoftwareAdd = new System.Windows.Forms.Button();
@@ -66,9 +66,9 @@ namespace SWORLD版本管理助手
             this.label1 = new System.Windows.Forms.Label();
             this.Tbx_LocalCachePath = new System.Windows.Forms.TextBox();
             this.Lab_LocalCachePath = new System.Windows.Forms.Label();
+            this.Btn_SelectLocalCachePath = new System.Windows.Forms.Button();
             this.Fbd_LocalCachePath = new System.Windows.Forms.FolderBrowserDialog();
             this.Fbd_RemotePath = new System.Windows.Forms.FolderBrowserDialog();
-            this.Btn_SelectLocalCachePath = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -144,7 +144,7 @@ namespace SWORLD版本管理助手
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Lbx_Software.FormattingEnabled = true;
             this.Lbx_Software.IntegralHeight = false;
-            this.Lbx_Software.ItemHeight = 17;
+            this.Lbx_Software.ItemHeight = 35;
             this.Lbx_Software.Location = new System.Drawing.Point(283, 225);
             this.Lbx_Software.Name = "Lbx_Software";
             this.Lbx_Software.Size = new System.Drawing.Size(216, 324);
@@ -174,11 +174,30 @@ namespace SWORLD版本管理助手
             this.Btn_ServiceConfig.UseVisualStyleBackColor = true;
             this.Btn_ServiceConfig.Click += new System.EventHandler(this.Btn_ServiceConfig_Click);
             // 
+            // Tbx_RemotePath
+            // 
+            this.Tbx_RemotePath.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Tbx_RemotePath.Location = new System.Drawing.Point(80, 117);
+            this.Tbx_RemotePath.Name = "Tbx_RemotePath";
+            this.Tbx_RemotePath.Size = new System.Drawing.Size(179, 43);
+            this.Tbx_RemotePath.TabIndex = 5;
+            this.Tbx_RemotePath.Text = "/etc/sworld/software";
+            this.Tbx_RemotePath.TextChanged += new System.EventHandler(this.Tbx_RemotePath_TextChanged);
+            // 
+            // Lab_SoftwarePath
+            // 
+            this.Lab_SoftwarePath.AutoSize = true;
+            this.Lab_SoftwarePath.Location = new System.Drawing.Point(6, 120);
+            this.Lab_SoftwarePath.Name = "Lab_SoftwarePath";
+            this.Lab_SoftwarePath.Size = new System.Drawing.Size(150, 35);
+            this.Lab_SoftwarePath.TabIndex = 8;
+            this.Lab_SoftwarePath.Text = "远程路径：";
+            // 
             // Tbx_HostIP
             // 
             this.Tbx_HostIP.Location = new System.Drawing.Point(68, 22);
             this.Tbx_HostIP.Name = "Tbx_HostIP";
-            this.Tbx_HostIP.Size = new System.Drawing.Size(143, 23);
+            this.Tbx_HostIP.Size = new System.Drawing.Size(143, 43);
             this.Tbx_HostIP.TabIndex = 4;
             this.Tbx_HostIP.Text = "frp.sworld.top";
             // 
@@ -186,7 +205,7 @@ namespace SWORLD版本管理助手
             // 
             this.Tbx_UserName.Location = new System.Drawing.Point(68, 59);
             this.Tbx_UserName.Name = "Tbx_UserName";
-            this.Tbx_UserName.Size = new System.Drawing.Size(191, 23);
+            this.Tbx_UserName.Size = new System.Drawing.Size(191, 43);
             this.Tbx_UserName.TabIndex = 5;
             this.Tbx_UserName.Text = "root";
             // 
@@ -195,19 +214,8 @@ namespace SWORLD版本管理助手
             this.Tbx_PassWord.Location = new System.Drawing.Point(68, 96);
             this.Tbx_PassWord.Name = "Tbx_PassWord";
             this.Tbx_PassWord.PasswordChar = '#';
-            this.Tbx_PassWord.Size = new System.Drawing.Size(191, 23);
+            this.Tbx_PassWord.Size = new System.Drawing.Size(191, 43);
             this.Tbx_PassWord.TabIndex = 5;
-            this.Tbx_PassWord.Text = "Xp199603290031.";
-            // 
-            // Tbx_RemotePath
-            // 
-            this.Tbx_RemotePath.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Tbx_RemotePath.Location = new System.Drawing.Point(80, 117);
-            this.Tbx_RemotePath.Name = "Tbx_RemotePath";
-            this.Tbx_RemotePath.Size = new System.Drawing.Size(179, 23);
-            this.Tbx_RemotePath.TabIndex = 5;
-            this.Tbx_RemotePath.Text = "/etc/sworld/software";
-            this.Tbx_RemotePath.TextChanged += new System.EventHandler(this.Tbx_RemotePath_TextChanged);
             // 
             // Gbx_Connect
             // 
@@ -232,7 +240,7 @@ namespace SWORLD版本管理助手
             // 
             this.Tbx_HostPort.Location = new System.Drawing.Point(217, 22);
             this.Tbx_HostPort.Name = "Tbx_HostPort";
-            this.Tbx_HostPort.Size = new System.Drawing.Size(42, 23);
+            this.Tbx_HostPort.Size = new System.Drawing.Size(42, 43);
             this.Tbx_HostPort.TabIndex = 11;
             this.Tbx_HostPort.Text = "22";
             this.Tbx_HostPort.TextChanged += new System.EventHandler(this.Tbx_HostPort_TextChanged);
@@ -244,7 +252,7 @@ namespace SWORLD版本管理助手
             this.Lab_Status.ForeColor = System.Drawing.Color.Red;
             this.Lab_Status.Location = new System.Drawing.Point(81, 136);
             this.Lab_Status.Name = "Lab_Status";
-            this.Lab_Status.Size = new System.Drawing.Size(44, 17);
+            this.Lab_Status.Size = new System.Drawing.Size(96, 35);
             this.Lab_Status.TabIndex = 10;
             this.Lab_Status.Text = "未连接";
             // 
@@ -263,7 +271,7 @@ namespace SWORLD版本管理助手
             this.Lab_LabStatus.AutoSize = true;
             this.Lab_LabStatus.Location = new System.Drawing.Point(6, 136);
             this.Lab_LabStatus.Name = "Lab_LabStatus";
-            this.Lab_LabStatus.Size = new System.Drawing.Size(56, 17);
+            this.Lab_LabStatus.Size = new System.Drawing.Size(120, 35);
             this.Lab_LabStatus.TabIndex = 9;
             this.Lab_LabStatus.Text = "状   态：";
             // 
@@ -272,7 +280,7 @@ namespace SWORLD版本管理助手
             this.Lab_PassWord.AutoSize = true;
             this.Lab_PassWord.Location = new System.Drawing.Point(6, 99);
             this.Lab_PassWord.Name = "Lab_PassWord";
-            this.Lab_PassWord.Size = new System.Drawing.Size(56, 17);
+            this.Lab_PassWord.Size = new System.Drawing.Size(120, 35);
             this.Lab_PassWord.TabIndex = 8;
             this.Lab_PassWord.Text = "密   码：";
             // 
@@ -281,7 +289,7 @@ namespace SWORLD版本管理助手
             this.Lab_UserName.AutoSize = true;
             this.Lab_UserName.Location = new System.Drawing.Point(6, 62);
             this.Lab_UserName.Name = "Lab_UserName";
-            this.Lab_UserName.Size = new System.Drawing.Size(56, 17);
+            this.Lab_UserName.Size = new System.Drawing.Size(123, 35);
             this.Lab_UserName.TabIndex = 8;
             this.Lab_UserName.Text = "用户名：";
             // 
@@ -290,18 +298,9 @@ namespace SWORLD版本管理助手
             this.Lab_HostInfo.AutoSize = true;
             this.Lab_HostInfo.Location = new System.Drawing.Point(6, 25);
             this.Lab_HostInfo.Name = "Lab_HostInfo";
-            this.Lab_HostInfo.Size = new System.Drawing.Size(56, 17);
+            this.Lab_HostInfo.Size = new System.Drawing.Size(120, 35);
             this.Lab_HostInfo.TabIndex = 7;
             this.Lab_HostInfo.Text = "主   机：";
-            // 
-            // Lab_SoftwarePath
-            // 
-            this.Lab_SoftwarePath.AutoSize = true;
-            this.Lab_SoftwarePath.Location = new System.Drawing.Point(6, 120);
-            this.Lab_SoftwarePath.Name = "Lab_SoftwarePath";
-            this.Lab_SoftwarePath.Size = new System.Drawing.Size(68, 17);
-            this.Lab_SoftwarePath.TabIndex = 8;
-            this.Lab_SoftwarePath.Text = "远程路径：";
             // 
             // Btn_SoftwareUpdate
             // 
@@ -418,7 +417,7 @@ namespace SWORLD版本管理助手
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label2.Location = new System.Drawing.Point(6, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 20);
+            this.label2.Size = new System.Drawing.Size(317, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "Design by SWORLD";
             // 
@@ -429,7 +428,7 @@ namespace SWORLD版本管理助手
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label1.Location = new System.Drawing.Point(5, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 20);
+            this.label1.Size = new System.Drawing.Size(362, 41);
             this.label1.TabIndex = 2;
             this.label1.Text = "http://www.sworld.top";
             // 
@@ -439,7 +438,7 @@ namespace SWORLD版本管理助手
             this.Tbx_LocalCachePath.Location = new System.Drawing.Point(6, 128);
             this.Tbx_LocalCachePath.Name = "Tbx_LocalCachePath";
             this.Tbx_LocalCachePath.ReadOnly = true;
-            this.Tbx_LocalCachePath.Size = new System.Drawing.Size(253, 23);
+            this.Tbx_LocalCachePath.Size = new System.Drawing.Size(253, 43);
             this.Tbx_LocalCachePath.TabIndex = 5;
             // 
             // Lab_LocalCachePath
@@ -447,17 +446,9 @@ namespace SWORLD版本管理助手
             this.Lab_LocalCachePath.AutoSize = true;
             this.Lab_LocalCachePath.Location = new System.Drawing.Point(7, 108);
             this.Lab_LocalCachePath.Name = "Lab_LocalCachePath";
-            this.Lab_LocalCachePath.Size = new System.Drawing.Size(68, 17);
+            this.Lab_LocalCachePath.Size = new System.Drawing.Size(150, 35);
             this.Lab_LocalCachePath.TabIndex = 13;
             this.Lab_LocalCachePath.Text = "本地路径：";
-            // 
-            // Fbd_LocalCachePath
-            // 
-            this.Fbd_LocalCachePath.Description = "选择本地缓存路径";
-            // 
-            // Fbd_RemotePath
-            // 
-            this.Fbd_RemotePath.Description = "选择远程路径";
             // 
             // Btn_SelectLocalCachePath
             // 
@@ -468,6 +459,14 @@ namespace SWORLD版本管理助手
             this.Btn_SelectLocalCachePath.Text = "选择";
             this.Btn_SelectLocalCachePath.UseVisualStyleBackColor = true;
             this.Btn_SelectLocalCachePath.Click += new System.EventHandler(this.Btn_SelectLocalCachePath_Click);
+            // 
+            // Fbd_LocalCachePath
+            // 
+            this.Fbd_LocalCachePath.Description = "选择本地缓存路径";
+            // 
+            // Fbd_RemotePath
+            // 
+            this.Fbd_RemotePath.Description = "选择远程路径";
             // 
             // listView1
             // 
@@ -545,7 +544,7 @@ namespace SWORLD版本管理助手
             // 
             // Frm_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.Gbx_DataMngt);

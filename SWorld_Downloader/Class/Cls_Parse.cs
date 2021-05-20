@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SWORLD开发助手.Class
+namespace SWorld_Downloader.Class
 {
     /// <summary>
     /// 十六键值文件解析结构体

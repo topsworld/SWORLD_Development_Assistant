@@ -1,4 +1,4 @@
-﻿namespace SWORLD开发助手
+﻿namespace SWorld_Downloader
 {
     partial class Main
     {
@@ -54,7 +54,6 @@
             this.Tsddb_Tool_Box = new System.Windows.Forms.ToolStripDropDownButton();
             this.TsBtn_Bottom_Calc = new System.Windows.Forms.ToolStripMenuItem();
             this.TsBtn_Bottom_Note = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsBtn_Bottom_ControlPanle = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Tbx_Time_Show = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -87,30 +86,25 @@
             this.Btn_Debug_M_Go_Page = new System.Windows.Forms.Button();
             this.Ckbx_DL_Auto_Close_Debug_Port = new System.Windows.Forms.CheckBox();
             this.Btn_Serial_DL_Fresh = new System.Windows.Forms.Button();
-            this.Btn_Tools_GeekUninstaller = new System.Windows.Forms.Button();
-            this.Btn_Tools_FolderPainter = new System.Windows.Forms.Button();
-            this.Btn_Tools_EmptyFolderNuker = new System.Windows.Forms.Button();
-            this.Pbx_Wxpay = new System.Windows.Forms.PictureBox();
-            this.Pbx_Alipay = new System.Windows.Forms.PictureBox();
             this.Tmr_Debug_Recv = new System.Windows.Forms.Timer(this.components);
             this.Tmr_Debug_ReSend = new System.Windows.Forms.Timer(this.components);
             this.Ofd_Debug_File = new System.Windows.Forms.OpenFileDialog();
             this.Tmr_Btm_Msg = new System.Windows.Forms.Timer(this.components);
             this.Tmr_Debug_Resend_M = new System.Windows.Forms.Timer(this.components);
-            this.Tc_Main = new SWORLD开发助手.Control.TabControlPlus();
+            this.Tc_Main = new SWorld_Downloader.Control.TabControlPlus();
             this.Tp_Debug = new System.Windows.Forms.TabPage();
             this.Tbx_Msg_Debug = new System.Windows.Forms.TextBox();
-            this.Pal_Debug_Serial_Option = new System.Windows.Forms.Panel();
-            this.Lab_Debug_SerialNum = new System.Windows.Forms.Label();
+            this.Pal_Serial_Option = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.CBx_Debug_DataBit = new System.Windows.Forms.ComboBox();
-            this.Lab_Debug_DataBit = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.Cbx_Debug_Parity = new System.Windows.Forms.ComboBox();
-            this.Lab_Debug_StopBit = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.Cbx_Debug_StopBit = new System.Windows.Forms.ComboBox();
-            this.Lab_Debug_CheckBit = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.Cbx_Debug_Seiral_Num = new System.Windows.Forms.ComboBox();
             this.Cbx_Debug_BaudRate = new System.Windows.Forms.ComboBox();
-            this.Lab_Debug_BaudRate = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Lab_Debug_RX = new System.Windows.Forms.Label();
             this.Lab_Debug_TX = new System.Windows.Forms.Label();
             this.Lab_Debug_RX_T = new System.Windows.Forms.Label();
@@ -122,14 +116,14 @@
             this.Ckbx_Debug_Show_Hex = new System.Windows.Forms.CheckBox();
             this.Ckbx_Debug_DTR = new System.Windows.Forms.CheckBox();
             this.Ckbx_Debug_RTS = new System.Windows.Forms.CheckBox();
-            this.Tc_Debug = new SWORLD开发助手.Control.TabCon();
+            this.Tc_Debug = new SWorld_Downloader.Control.TabCon();
             this.Tp_Debug_Send_One = new System.Windows.Forms.TabPage();
             this.Lab_Debug_Task_Process = new System.Windows.Forms.Label();
             this.Pgb_Debug_Task_Process = new System.Windows.Forms.ProgressBar();
             this.Ckbx_Debug_Show_Time = new System.Windows.Forms.CheckBox();
             this.Tbx_Debug_Resend_Time = new System.Windows.Forms.TextBox();
-            this.Lab_Debug_CycleUnit = new System.Windows.Forms.Label();
-            this.Lab_Debug_Cycle = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.Ckbx_Debug_Send_Ontime = new System.Windows.Forms.CheckBox();
             this.Tbx_Debug_Send_File_Name = new System.Windows.Forms.TextBox();
             this.Btn_Debug_Select_File = new System.Windows.Forms.Button();
@@ -148,10 +142,10 @@
             this.Ckbx_Debug_M_Send_Hex = new System.Windows.Forms.CheckBox();
             this.Ckbx_Debug_M_Con_NumKey = new System.Windows.Forms.CheckBox();
             this.Ckbx_Debug_M_Resend = new System.Windows.Forms.CheckBox();
-            this.Pal_Debug_MutilCycleSet = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Tbx_Debug_M_Resend_Time = new System.Windows.Forms.TextBox();
-            this.Lab_Debug_MutilCycle = new System.Windows.Forms.Label();
-            this.Lab_Debug_MutilCycleUnit = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.Btn_Debug_M5 = new System.Windows.Forms.Button();
             this.Btn_Debug_M6 = new System.Windows.Forms.Button();
             this.Btn_Debug_M7 = new System.Windows.Forms.Button();
@@ -183,93 +177,92 @@
             this.Tbx_Debug_M5 = new System.Windows.Forms.TextBox();
             this.Btn_Debug_M1 = new System.Windows.Forms.Button();
             this.Btn_Debug_M0 = new System.Windows.Forms.Button();
-            this.Pal_Debug_SwitchProject = new System.Windows.Forms.Panel();
-            this.Lab_Debug_Switch_ProjectTip = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
             this.Lab_Debug_M_Page = new System.Windows.Forms.Label();
             this.Tbx_Debug_M_Go_Page = new System.Windows.Forms.TextBox();
-            this.Lab_Debug_Sort2 = new System.Windows.Forms.Label();
-            this.Lab_Debug_Sort1 = new System.Windows.Forms.Label();
-            this.Pal_Debug_Operate = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Btn_Debug_M_Output = new System.Windows.Forms.Button();
             this.Tp_Debug_Send_Protocol = new System.Windows.Forms.TabPage();
             this.label43 = new System.Windows.Forms.Label();
-            this.Lab_Debug_Delay = new System.Windows.Forms.Label();
-            this.Lab_Debug_Operate = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.Tp_DL = new System.Windows.Forms.TabPage();
             this.Cbx_DL_BaudRate = new System.Windows.Forms.ComboBox();
             this.Pgb_DL_Task_Process = new System.Windows.Forms.ProgressBar();
             this.Cbx_DL_Serial_Num = new System.Windows.Forms.ComboBox();
             this.Gbx_Option_Byte = new System.Windows.Forms.GroupBox();
-            this.Lab_DL_UserDataByteExplain2 = new System.Windows.Forms.Label();
-            this.Lab_DL_UserDataByteExplain1 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.Tbx_DL_User_Data2 = new System.Windows.Forms.TextBox();
             this.Tbx_DL_User_Data1 = new System.Windows.Forms.TextBox();
-            this.Lab_DL_UserDataByte0x2 = new System.Windows.Forms.Label();
-            this.Lab_DL_UserDataByte0x1 = new System.Windows.Forms.Label();
-            this.Lab_DL_UserDataByte = new System.Windows.Forms.Label();
-            this.Lab_DL_WriteProtectedByteExplain4 = new System.Windows.Forms.Label();
-            this.Lab_DL_WriteProtectedByteExplain3 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.Tbx_DL_Write_Protect4 = new System.Windows.Forms.TextBox();
             this.Tbx_DL_Write_Protect3 = new System.Windows.Forms.TextBox();
-            this.Lab_DL_WriteProtectedByte0x4 = new System.Windows.Forms.Label();
-            this.Lab_DL_WriteProtectedByte0x3 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.Tbx_DL_HW_Byte = new System.Windows.Forms.TextBox();
-            this.Lab_DL_WriteProtectedByteExplain2 = new System.Windows.Forms.Label();
-            this.Lab_DL_WriteProtectedByteExplain1 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.Tbx_DL_Write_Protect2 = new System.Windows.Forms.TextBox();
-            this.Lab_DL_HardwareOptionByte0x = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.Tbx_DL_Read_Protect = new System.Windows.Forms.TextBox();
             this.Tbx_DL_Write_Protect1 = new System.Windows.Forms.TextBox();
-            this.Lab_DL_WriteProtectedByte = new System.Windows.Forms.Label();
-            this.Lab_DL_HardwareOptionByteExplain = new System.Windows.Forms.Label();
-            this.Lab_DL_HardwareOptionByte = new System.Windows.Forms.Label();
-            this.Btn_DetailSet = new System.Windows.Forms.Button();
-            this.Lab_DL_ReadProtectByteExplain = new System.Windows.Forms.Label();
-            this.Lab_DL_ReadProtectedByte = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.Btn_Option_Set_Default = new System.Windows.Forms.Button();
             this.Ckbx_DL_Write_Option_Byte = new System.Windows.Forms.CheckBox();
-            this.Lab_DL_WriteProtectedByte0x2 = new System.Windows.Forms.Label();
-            this.Lab_DL_WriteProtectedByte0x1 = new System.Windows.Forms.Label();
-            this.Lab_DL_ReadProtectByte0x = new System.Windows.Forms.Label();
-            this.Lbx_Msg_DL = new SWORLD开发助手.Control.ListBoxPlus();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.Lbx_Msg_DL = new SWorld_Downloader.Control.ListBoxPlus();
             this.Gbx_DL_Option = new System.Windows.Forms.GroupBox();
             this.Ckbx_Set_Read_Protect = new System.Windows.Forms.CheckBox();
             this.Ckbx_DL_Show_Time = new System.Windows.Forms.CheckBox();
             this.Cbx_Auto_DL = new System.Windows.Forms.CheckBox();
-            this.Lab_EraseWay = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.Tbx_DL_Adress = new System.Windows.Forms.TextBox();
             this.Rbtn_Erase_Part = new System.Windows.Forms.RadioButton();
             this.Ckbx_Check = new System.Windows.Forms.CheckBox();
             this.Ckbx_Auto_Match = new System.Windows.Forms.CheckBox();
             this.Rbtn_Erase_All = new System.Windows.Forms.RadioButton();
             this.Cbx_Go_BL_Way = new System.Windows.Forms.ComboBox();
-            this.Lab_DownloadStartAddress = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.Tbx_Run_Adress = new System.Windows.Forms.TextBox();
-            this.Lab_ProgramRunAddress = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.Ckbx_DL_After_Dir_Run = new System.Windows.Forms.CheckBox();
-            this.Lab_DL_BaudRate = new System.Windows.Forms.Label();
-            this.Lab_DL_SerialNum = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Tbx_DL_File_Path = new System.Windows.Forms.TextBox();
             this.Btn_DL_Erase_Chip = new System.Windows.Forms.Button();
             this.Btn_DL_Select_File = new System.Windows.Forms.Button();
             this.Btn_DL_Read_Chip_Info = new System.Windows.Forms.Button();
             this.Btn_DL_DownLoad_File = new System.Windows.Forms.Button();
-            this.Lab_DownloadFilePath = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.Tp_Tools = new System.Windows.Forms.TabPage();
-            this.TlPal_Tools = new System.Windows.Forms.TableLayoutPanel();
-            this.Btn_Tools_FileEncryptionDecrypt = new System.Windows.Forms.Button();
-            this.Btn_Tools_TTS = new System.Windows.Forms.Button();
-            this.Btn_Tools_FontCreate = new System.Windows.Forms.Button();
-            this.Btn_Tools_CalcTransf = new System.Windows.Forms.Button();
-            this.Btn_Tools_FileMerge = new System.Windows.Forms.Button();
-            this.Btn_Tools_BinEditor = new System.Windows.Forms.Button();
-            this.Btn_Tools_CodeFormat = new System.Windows.Forms.Button();
-            this.Btn_Tools_QrCode = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Btn_Tools_FileTimeAlter = new System.Windows.Forms.Button();
-            this.Btn_Tools_ResourceList = new System.Windows.Forms.Button();
-            this.Btn_Tools_ToolsPanel = new System.Windows.Forms.Button();
+            this.Tc_Tools = new System.Windows.Forms.TabControl();
+            this.Tp_CalcTrasf = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Tp_BinEditor = new System.Windows.Forms.TabPage();
+            this.Tp_CodeFormat = new System.Windows.Forms.TabPage();
+            this.Tp_QrCode = new System.Windows.Forms.TabPage();
+            this.Tp_ChineseCharacter = new System.Windows.Forms.TabPage();
+            this.Tp_TTS = new System.Windows.Forms.TabPage();
+            this.Tp_FileMerge = new System.Windows.Forms.TabPage();
+            this.Tp_FileEncrypt = new System.Windows.Forms.TabPage();
+            this.Tp_Source = new System.Windows.Forms.TabPage();
             this.Tp_Code = new System.Windows.Forms.TabPage();
             this.Spc_Code_Lib = new System.Windows.Forms.SplitContainer();
             this.label44 = new System.Windows.Forms.Label();
@@ -278,34 +271,33 @@
             this.Spc_DL = new System.Windows.Forms.SplitContainer();
             this.label34 = new System.Windows.Forms.Label();
             this.Tp_Help = new System.Windows.Forms.TabPage();
-            this.Llab_PersonHomePage = new System.Windows.Forms.LinkLabel();
-            this.Llab_PersonEmail = new System.Windows.Forms.LinkLabel();
-            this.Tbx_Help = new System.Windows.Forms.TextBox();
-            this.Lab_Personal_Elucidation = new System.Windows.Forms.Label();
-            this.Lab_Copyright = new System.Windows.Forms.Label();
-            this.Lab_Donate = new System.Windows.Forms.Label();
-            this.Pbx_SWORLD = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.Ts_Bottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Fix)).BeginInit();
             this.Cms_Send_Prj.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Wxpay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Alipay)).BeginInit();
             this.Tc_Main.SuspendLayout();
             this.Tp_Debug.SuspendLayout();
-            this.Pal_Debug_Serial_Option.SuspendLayout();
+            this.Pal_Serial_Option.SuspendLayout();
             this.Tc_Debug.SuspendLayout();
             this.Tp_Debug_Send_One.SuspendLayout();
             this.Tp_Debug_Send_More.SuspendLayout();
             this.Tblp_Send_M.SuspendLayout();
-            this.Pal_Debug_MutilCycleSet.SuspendLayout();
-            this.Pal_Debug_SwitchProject.SuspendLayout();
-            this.Pal_Debug_Operate.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.Tp_Debug_Send_Protocol.SuspendLayout();
             this.Tp_DL.SuspendLayout();
             this.Gbx_Option_Byte.SuspendLayout();
             this.Gbx_DL_Option.SuspendLayout();
             this.Tp_Tools.SuspendLayout();
-            this.TlPal_Tools.SuspendLayout();
+            this.Tc_Tools.SuspendLayout();
+            this.Tp_CalcTrasf.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.Tp_Code.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Spc_Code_Lib)).BeginInit();
             this.Spc_Code_Lib.Panel1.SuspendLayout();
@@ -316,7 +308,7 @@
             this.Spc_DL.Panel1.SuspendLayout();
             this.Spc_DL.SuspendLayout();
             this.Tp_Help.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_SWORLD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Sp_DownLoad
@@ -357,7 +349,7 @@
             // Tstbx_Serial_Stat_Img
             // 
             this.Tstbx_Serial_Stat_Img.AutoSize = false;
-            this.Tstbx_Serial_Stat_Img.BackgroundImage = global::SWORLD开发助手.Properties.Resources.close20;
+            this.Tstbx_Serial_Stat_Img.BackgroundImage = global::SWorld_Downloader.Properties.Resources.close20;
             this.Tstbx_Serial_Stat_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Tstbx_Serial_Stat_Img.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.Tstbx_Serial_Stat_Img.Name = "Tstbx_Serial_Stat_Img";
@@ -381,7 +373,7 @@
             this.TsBtn_HMI_Set,
             this.TsBtn_Help,
             this.TsBtn_Exit});
-            this.Tsdbtn_Set.Image = global::SWORLD开发助手.Properties.Resources.settings;
+            this.Tsdbtn_Set.Image = global::SWorld_Downloader.Properties.Resources.settings;
             this.Tsdbtn_Set.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tsdbtn_Set.Name = "Tsdbtn_Set";
             this.Tsdbtn_Set.Size = new System.Drawing.Size(64, 24);
@@ -508,9 +500,8 @@
             this.Tsddb_Tool_Box.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.Tsddb_Tool_Box.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsBtn_Bottom_Calc,
-            this.TsBtn_Bottom_Note,
-            this.TsBtn_Bottom_ControlPanle});
-            this.Tsddb_Tool_Box.Image = global::SWORLD开发助手.Properties.Resources.tools;
+            this.TsBtn_Bottom_Note});
+            this.Tsddb_Tool_Box.Image = global::SWorld_Downloader.Properties.Resources.tools;
             this.Tsddb_Tool_Box.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tsddb_Tool_Box.Name = "Tsddb_Tool_Box";
             this.Tsddb_Tool_Box.Size = new System.Drawing.Size(29, 24);
@@ -520,7 +511,7 @@
             this.TsBtn_Bottom_Calc.Name = "TsBtn_Bottom_Calc";
             this.TsBtn_Bottom_Calc.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.C)));
-            this.TsBtn_Bottom_Calc.Size = new System.Drawing.Size(210, 22);
+            this.TsBtn_Bottom_Calc.Size = new System.Drawing.Size(198, 22);
             this.TsBtn_Bottom_Calc.Text = "计算器";
             this.TsBtn_Bottom_Calc.Click += new System.EventHandler(this.Tsbtn_Bottom_Calc_Click);
             // 
@@ -529,18 +520,9 @@
             this.TsBtn_Bottom_Note.Name = "TsBtn_Bottom_Note";
             this.TsBtn_Bottom_Note.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.N)));
-            this.TsBtn_Bottom_Note.Size = new System.Drawing.Size(210, 22);
+            this.TsBtn_Bottom_Note.Size = new System.Drawing.Size(198, 22);
             this.TsBtn_Bottom_Note.Text = "记事本";
             this.TsBtn_Bottom_Note.Click += new System.EventHandler(this.Tsbtn_Bottom_Note_Click);
-            // 
-            // TsBtn_Bottom_ControlPanle
-            // 
-            this.TsBtn_Bottom_ControlPanle.Name = "TsBtn_Bottom_ControlPanle";
-            this.TsBtn_Bottom_ControlPanle.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.P)));
-            this.TsBtn_Bottom_ControlPanle.Size = new System.Drawing.Size(210, 22);
-            this.TsBtn_Bottom_ControlPanle.Text = "控制面板";
-            this.TsBtn_Bottom_ControlPanle.Click += new System.EventHandler(this.TsBtn_Bottom_ControlPanle_Click);
             // 
             // toolStripSeparator1
             // 
@@ -648,7 +630,7 @@
             // 
             this.Pbx_Fix.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Pbx_Fix.BackColor = System.Drawing.Color.White;
-            this.Pbx_Fix.Image = global::SWORLD开发助手.Properties.Resources.unfix;
+            this.Pbx_Fix.Image = global::SWorld_Downloader.Properties.Resources.unfix;
             this.Pbx_Fix.Location = new System.Drawing.Point(755, 3);
             this.Pbx_Fix.Name = "Pbx_Fix";
             this.Pbx_Fix.Size = new System.Drawing.Size(20, 20);
@@ -659,7 +641,7 @@
             // 
             // Btn_Serial_Debug_Fresh
             // 
-            this.Btn_Serial_Debug_Fresh.BackgroundImage = global::SWORLD开发助手.Properties.Resources.refresh24;
+            this.Btn_Serial_Debug_Fresh.BackgroundImage = global::SWorld_Downloader.Properties.Resources.refresh24;
             this.Btn_Serial_Debug_Fresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Btn_Serial_Debug_Fresh.Font = new System.Drawing.Font("等线", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_Serial_Debug_Fresh.Location = new System.Drawing.Point(138, 18);
@@ -735,7 +717,7 @@
             // Btn_Debug_Prj_Add
             // 
             this.Btn_Debug_Prj_Add.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Btn_Debug_Prj_Add.BackgroundImage = global::SWORLD开发助手.Properties.Resources.pro_add;
+            this.Btn_Debug_Prj_Add.BackgroundImage = global::SWorld_Downloader.Properties.Resources.pro_add;
             this.Btn_Debug_Prj_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Btn_Debug_Prj_Add.Location = new System.Drawing.Point(3, 2);
             this.Btn_Debug_Prj_Add.Name = "Btn_Debug_Prj_Add";
@@ -748,7 +730,7 @@
             // Btn_Debug_M_Add
             // 
             this.Btn_Debug_M_Add.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_Debug_M_Add.BackgroundImage = global::SWORLD开发助手.Properties.Resources.page_add;
+            this.Btn_Debug_M_Add.BackgroundImage = global::SWorld_Downloader.Properties.Resources.page_add;
             this.Btn_Debug_M_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_Debug_M_Add.Location = new System.Drawing.Point(119, 2);
             this.Btn_Debug_M_Add.Name = "Btn_Debug_M_Add";
@@ -789,7 +771,7 @@
             // Btn_Debug_M_Rmv
             // 
             this.Btn_Debug_M_Rmv.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_Debug_M_Rmv.BackgroundImage = global::SWORLD开发助手.Properties.Resources.page_rmv;
+            this.Btn_Debug_M_Rmv.BackgroundImage = global::SWorld_Downloader.Properties.Resources.page_rmv;
             this.Btn_Debug_M_Rmv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_Debug_M_Rmv.Location = new System.Drawing.Point(150, 2);
             this.Btn_Debug_M_Rmv.Name = "Btn_Debug_M_Rmv";
@@ -842,7 +824,7 @@
             // Btn_Serial_DL_Fresh
             // 
             this.Btn_Serial_DL_Fresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Serial_DL_Fresh.BackgroundImage = global::SWORLD开发助手.Properties.Resources.refresh24;
+            this.Btn_Serial_DL_Fresh.BackgroundImage = global::SWorld_Downloader.Properties.Resources.refresh24;
             this.Btn_Serial_DL_Fresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Btn_Serial_DL_Fresh.Location = new System.Drawing.Point(750, 8);
             this.Btn_Serial_DL_Fresh.Name = "Btn_Serial_DL_Fresh";
@@ -851,62 +833,6 @@
             this.Tt_Msg.SetToolTip(this.Btn_Serial_DL_Fresh, "刷新串口");
             this.Btn_Serial_DL_Fresh.UseVisualStyleBackColor = true;
             this.Btn_Serial_DL_Fresh.Click += new System.EventHandler(this.Btn_Fresh_Click);
-            // 
-            // Btn_Tools_GeekUninstaller
-            // 
-            this.Btn_Tools_GeekUninstaller.Location = new System.Drawing.Point(3, 238);
-            this.Btn_Tools_GeekUninstaller.Name = "Btn_Tools_GeekUninstaller";
-            this.Btn_Tools_GeekUninstaller.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_GeekUninstaller.TabIndex = 14;
-            this.Btn_Tools_GeekUninstaller.Text = "GeekUninstaller";
-            this.Tt_Msg.SetToolTip(this.Btn_Tools_GeekUninstaller, "卸载软件");
-            this.Btn_Tools_GeekUninstaller.UseVisualStyleBackColor = true;
-            this.Btn_Tools_GeekUninstaller.Click += new System.EventHandler(this.Btn_Tools_GeekUninstaller_Click);
-            // 
-            // Btn_Tools_FolderPainter
-            // 
-            this.Btn_Tools_FolderPainter.Location = new System.Drawing.Point(152, 238);
-            this.Btn_Tools_FolderPainter.Name = "Btn_Tools_FolderPainter";
-            this.Btn_Tools_FolderPainter.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_FolderPainter.TabIndex = 14;
-            this.Btn_Tools_FolderPainter.Text = "FolderPainter";
-            this.Tt_Msg.SetToolTip(this.Btn_Tools_FolderPainter, "文件夹图标修改软件");
-            this.Btn_Tools_FolderPainter.UseVisualStyleBackColor = true;
-            this.Btn_Tools_FolderPainter.Click += new System.EventHandler(this.Btn_Tools_FolderPainter_Click);
-            // 
-            // Btn_Tools_EmptyFolderNuker
-            // 
-            this.Btn_Tools_EmptyFolderNuker.Location = new System.Drawing.Point(301, 238);
-            this.Btn_Tools_EmptyFolderNuker.Name = "Btn_Tools_EmptyFolderNuker";
-            this.Btn_Tools_EmptyFolderNuker.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_EmptyFolderNuker.TabIndex = 14;
-            this.Btn_Tools_EmptyFolderNuker.Text = "EmptyFolderNuker";
-            this.Tt_Msg.SetToolTip(this.Btn_Tools_EmptyFolderNuker, "清除空文件夹软件");
-            this.Btn_Tools_EmptyFolderNuker.UseVisualStyleBackColor = true;
-            this.Btn_Tools_EmptyFolderNuker.Click += new System.EventHandler(this.Btn_Tools_EmptyFolderNuker_Click);
-            // 
-            // Pbx_Wxpay
-            // 
-            this.Pbx_Wxpay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pbx_Wxpay.Image = global::SWORLD开发助手.Properties.Resources.微信;
-            this.Pbx_Wxpay.Location = new System.Drawing.Point(656, 356);
-            this.Pbx_Wxpay.Name = "Pbx_Wxpay";
-            this.Pbx_Wxpay.Size = new System.Drawing.Size(120, 120);
-            this.Pbx_Wxpay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pbx_Wxpay.TabIndex = 15;
-            this.Pbx_Wxpay.TabStop = false;
-            this.Tt_Msg.SetToolTip(this.Pbx_Wxpay, "使用微信支付捐赠");
-            // 
-            // Pbx_Alipay
-            // 
-            this.Pbx_Alipay.Image = global::SWORLD开发助手.Properties.Resources.支付宝;
-            this.Pbx_Alipay.Location = new System.Drawing.Point(656, 230);
-            this.Pbx_Alipay.Name = "Pbx_Alipay";
-            this.Pbx_Alipay.Size = new System.Drawing.Size(120, 120);
-            this.Pbx_Alipay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pbx_Alipay.TabIndex = 15;
-            this.Pbx_Alipay.TabStop = false;
-            this.Tt_Msg.SetToolTip(this.Pbx_Alipay, "使用支付宝支付捐赠");
             // 
             // Tmr_Debug_Recv
             // 
@@ -964,7 +890,7 @@
             // Tp_Debug
             // 
             this.Tp_Debug.Controls.Add(this.Tbx_Msg_Debug);
-            this.Tp_Debug.Controls.Add(this.Pal_Debug_Serial_Option);
+            this.Tp_Debug.Controls.Add(this.Pal_Serial_Option);
             this.Tp_Debug.Controls.Add(this.Lab_Debug_RX);
             this.Tp_Debug.Controls.Add(this.Lab_Debug_TX);
             this.Tp_Debug.Controls.Add(this.Lab_Debug_RX_T);
@@ -977,8 +903,8 @@
             this.Tp_Debug.Controls.Add(this.Ckbx_Debug_DTR);
             this.Tp_Debug.Controls.Add(this.Ckbx_Debug_RTS);
             this.Tp_Debug.Controls.Add(this.Tc_Debug);
-            this.Tp_Debug.Controls.Add(this.Lab_Debug_Delay);
-            this.Tp_Debug.Controls.Add(this.Lab_Debug_Operate);
+            this.Tp_Debug.Controls.Add(this.label33);
+            this.Tp_Debug.Controls.Add(this.label5);
             this.Tp_Debug.Location = new System.Drawing.Point(1, 30);
             this.Tp_Debug.Name = "Tp_Debug";
             this.Tp_Debug.Size = new System.Drawing.Size(782, 482);
@@ -1001,35 +927,35 @@
             this.Tbx_Msg_Debug.Size = new System.Drawing.Size(608, 284);
             this.Tbx_Msg_Debug.TabIndex = 42;
             // 
-            // Pal_Debug_Serial_Option
+            // Pal_Serial_Option
             // 
-            this.Pal_Debug_Serial_Option.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Lab_Debug_SerialNum);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.CBx_Debug_DataBit);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Lab_Debug_DataBit);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Cbx_Debug_Parity);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Lab_Debug_StopBit);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Cbx_Debug_StopBit);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Lab_Debug_CheckBit);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Cbx_Debug_Seiral_Num);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Cbx_Debug_BaudRate);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Lab_Debug_BaudRate);
-            this.Pal_Debug_Serial_Option.Controls.Add(this.Btn_Serial_Debug_Fresh);
-            this.Pal_Debug_Serial_Option.Location = new System.Drawing.Point(614, 3);
-            this.Pal_Debug_Serial_Option.Name = "Pal_Debug_Serial_Option";
-            this.Pal_Debug_Serial_Option.Size = new System.Drawing.Size(166, 151);
-            this.Pal_Debug_Serial_Option.TabIndex = 38;
+            this.Pal_Serial_Option.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pal_Serial_Option.Controls.Add(this.label10);
+            this.Pal_Serial_Option.Controls.Add(this.CBx_Debug_DataBit);
+            this.Pal_Serial_Option.Controls.Add(this.label11);
+            this.Pal_Serial_Option.Controls.Add(this.Cbx_Debug_Parity);
+            this.Pal_Serial_Option.Controls.Add(this.label4);
+            this.Pal_Serial_Option.Controls.Add(this.Cbx_Debug_StopBit);
+            this.Pal_Serial_Option.Controls.Add(this.label12);
+            this.Pal_Serial_Option.Controls.Add(this.Cbx_Debug_Seiral_Num);
+            this.Pal_Serial_Option.Controls.Add(this.Cbx_Debug_BaudRate);
+            this.Pal_Serial_Option.Controls.Add(this.label3);
+            this.Pal_Serial_Option.Controls.Add(this.Btn_Serial_Debug_Fresh);
+            this.Pal_Serial_Option.Location = new System.Drawing.Point(614, 3);
+            this.Pal_Serial_Option.Name = "Pal_Serial_Option";
+            this.Pal_Serial_Option.Size = new System.Drawing.Size(166, 151);
+            this.Pal_Serial_Option.TabIndex = 38;
             // 
-            // Lab_Debug_SerialNum
+            // label10
             // 
-            this.Lab_Debug_SerialNum.AutoSize = true;
-            this.Lab_Debug_SerialNum.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_SerialNum.Location = new System.Drawing.Point(2, 3);
-            this.Lab_Debug_SerialNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_SerialNum.Name = "Lab_Debug_SerialNum";
-            this.Lab_Debug_SerialNum.Size = new System.Drawing.Size(63, 14);
-            this.Lab_Debug_SerialNum.TabIndex = 18;
-            this.Lab_Debug_SerialNum.Text = "串口号：";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(2, 3);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 14);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "串口号：";
             // 
             // CBx_Debug_DataBit
             // 
@@ -1048,16 +974,16 @@
             this.CBx_Debug_DataBit.Size = new System.Drawing.Size(90, 20);
             this.CBx_Debug_DataBit.TabIndex = 3;
             // 
-            // Lab_Debug_DataBit
+            // label11
             // 
-            this.Lab_Debug_DataBit.AutoSize = true;
-            this.Lab_Debug_DataBit.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_DataBit.Location = new System.Drawing.Point(1, 103);
-            this.Lab_Debug_DataBit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_DataBit.Name = "Lab_Debug_DataBit";
-            this.Lab_Debug_DataBit.Size = new System.Drawing.Size(63, 14);
-            this.Lab_Debug_DataBit.TabIndex = 22;
-            this.Lab_Debug_DataBit.Text = "数据位：";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(1, 103);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(63, 14);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "数据位：";
             // 
             // Cbx_Debug_Parity
             // 
@@ -1077,16 +1003,16 @@
             this.Cbx_Debug_Parity.Size = new System.Drawing.Size(90, 20);
             this.Cbx_Debug_Parity.TabIndex = 4;
             // 
-            // Lab_Debug_StopBit
+            // label4
             // 
-            this.Lab_Debug_StopBit.AutoSize = true;
-            this.Lab_Debug_StopBit.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_StopBit.Location = new System.Drawing.Point(1, 76);
-            this.Lab_Debug_StopBit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_StopBit.Name = "Lab_Debug_StopBit";
-            this.Lab_Debug_StopBit.Size = new System.Drawing.Size(63, 14);
-            this.Lab_Debug_StopBit.TabIndex = 2;
-            this.Lab_Debug_StopBit.Text = "停止位：";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(1, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 14);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "停止位：";
             // 
             // Cbx_Debug_StopBit
             // 
@@ -1105,16 +1031,16 @@
             this.Cbx_Debug_StopBit.Size = new System.Drawing.Size(90, 20);
             this.Cbx_Debug_StopBit.TabIndex = 2;
             // 
-            // Lab_Debug_CheckBit
+            // label12
             // 
-            this.Lab_Debug_CheckBit.AutoSize = true;
-            this.Lab_Debug_CheckBit.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_CheckBit.Location = new System.Drawing.Point(1, 130);
-            this.Lab_Debug_CheckBit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_CheckBit.Name = "Lab_Debug_CheckBit";
-            this.Lab_Debug_CheckBit.Size = new System.Drawing.Size(63, 14);
-            this.Lab_Debug_CheckBit.TabIndex = 23;
-            this.Lab_Debug_CheckBit.Text = "校验位：";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(1, 130);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 14);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "校验位：";
             // 
             // Cbx_Debug_Seiral_Num
             // 
@@ -1156,16 +1082,16 @@
             this.Cbx_Debug_BaudRate.TabIndex = 1;
             this.Cbx_Debug_BaudRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Num);
             // 
-            // Lab_Debug_BaudRate
+            // label3
             // 
-            this.Lab_Debug_BaudRate.AutoSize = true;
-            this.Lab_Debug_BaudRate.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_BaudRate.Location = new System.Drawing.Point(1, 49);
-            this.Lab_Debug_BaudRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_BaudRate.Name = "Lab_Debug_BaudRate";
-            this.Lab_Debug_BaudRate.Size = new System.Drawing.Size(63, 14);
-            this.Lab_Debug_BaudRate.TabIndex = 16;
-            this.Lab_Debug_BaudRate.Text = "波特率：";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(1, 49);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 14);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "波特率：";
             // 
             // Lab_Debug_RX
             // 
@@ -1269,7 +1195,7 @@
             this.Btn_Debug_Open_Serial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Debug_Open_Serial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_Debug_Open_Serial.Font = new System.Drawing.Font("等线", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_Debug_Open_Serial.Image = global::SWORLD开发助手.Properties.Resources.close20;
+            this.Btn_Debug_Open_Serial.Image = global::SWorld_Downloader.Properties.Resources.close20;
             this.Btn_Debug_Open_Serial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Debug_Open_Serial.Location = new System.Drawing.Point(685, 160);
             this.Btn_Debug_Open_Serial.Name = "Btn_Debug_Open_Serial";
@@ -1340,8 +1266,8 @@
             this.Tp_Debug_Send_One.Controls.Add(this.Pgb_Debug_Task_Process);
             this.Tp_Debug_Send_One.Controls.Add(this.Ckbx_Debug_Show_Time);
             this.Tp_Debug_Send_One.Controls.Add(this.Tbx_Debug_Resend_Time);
-            this.Tp_Debug_Send_One.Controls.Add(this.Lab_Debug_CycleUnit);
-            this.Tp_Debug_Send_One.Controls.Add(this.Lab_Debug_Cycle);
+            this.Tp_Debug_Send_One.Controls.Add(this.label39);
+            this.Tp_Debug_Send_One.Controls.Add(this.label38);
             this.Tp_Debug_Send_One.Controls.Add(this.Ckbx_Debug_Send_Ontime);
             this.Tp_Debug_Send_One.Controls.Add(this.Tbx_Debug_Send_File_Name);
             this.Tp_Debug_Send_One.Controls.Add(this.Btn_Debug_Select_File);
@@ -1406,27 +1332,27 @@
             this.Tbx_Debug_Resend_Time.TextChanged += new System.EventHandler(this.TextChange_1_1000000);
             this.Tbx_Debug_Resend_Time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Num);
             // 
-            // Lab_Debug_CycleUnit
+            // label39
             // 
-            this.Lab_Debug_CycleUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Debug_CycleUnit.AutoSize = true;
-            this.Lab_Debug_CycleUnit.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_CycleUnit.Location = new System.Drawing.Point(584, 131);
-            this.Lab_Debug_CycleUnit.Name = "Lab_Debug_CycleUnit";
-            this.Lab_Debug_CycleUnit.Size = new System.Drawing.Size(23, 14);
-            this.Lab_Debug_CycleUnit.TabIndex = 115;
-            this.Lab_Debug_CycleUnit.Text = "ms";
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label39.Location = new System.Drawing.Point(584, 131);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(23, 14);
+            this.label39.TabIndex = 115;
+            this.label39.Text = "ms";
             // 
-            // Lab_Debug_Cycle
+            // label38
             // 
-            this.Lab_Debug_Cycle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Debug_Cycle.AutoSize = true;
-            this.Lab_Debug_Cycle.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_Cycle.Location = new System.Drawing.Point(495, 131);
-            this.Lab_Debug_Cycle.Name = "Lab_Debug_Cycle";
-            this.Lab_Debug_Cycle.Size = new System.Drawing.Size(46, 14);
-            this.Lab_Debug_Cycle.TabIndex = 113;
-            this.Lab_Debug_Cycle.Text = "周期：";
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label38.Location = new System.Drawing.Point(495, 131);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(46, 14);
+            this.label38.TabIndex = 113;
+            this.label38.Text = "周期：";
             // 
             // Ckbx_Debug_Send_Ontime
             // 
@@ -1603,7 +1529,7 @@
             this.Tblp_Send_M.Controls.Add(this.Ckbx_Debug_M_Send_Hex, 7, 1);
             this.Tblp_Send_M.Controls.Add(this.Ckbx_Debug_M_Con_NumKey, 7, 2);
             this.Tblp_Send_M.Controls.Add(this.Ckbx_Debug_M_Resend, 7, 3);
-            this.Tblp_Send_M.Controls.Add(this.Pal_Debug_MutilCycleSet, 7, 4);
+            this.Tblp_Send_M.Controls.Add(this.panel1, 7, 4);
             this.Tblp_Send_M.Controls.Add(this.Btn_Debug_M5, 6, 0);
             this.Tblp_Send_M.Controls.Add(this.Btn_Debug_M6, 6, 1);
             this.Tblp_Send_M.Controls.Add(this.Btn_Debug_M7, 6, 2);
@@ -1635,8 +1561,8 @@
             this.Tblp_Send_M.Controls.Add(this.Tbx_Debug_M5, 5, 0);
             this.Tblp_Send_M.Controls.Add(this.Btn_Debug_M1, 3, 1);
             this.Tblp_Send_M.Controls.Add(this.Btn_Debug_M0, 3, 0);
-            this.Tblp_Send_M.Controls.Add(this.Pal_Debug_SwitchProject, 1, 5);
-            this.Tblp_Send_M.Controls.Add(this.Pal_Debug_Operate, 7, 5);
+            this.Tblp_Send_M.Controls.Add(this.panel2, 1, 5);
+            this.Tblp_Send_M.Controls.Add(this.panel3, 7, 5);
             this.Tblp_Send_M.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tblp_Send_M.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Tblp_Send_M.Location = new System.Drawing.Point(3, 2);
@@ -1703,17 +1629,17 @@
             this.Ckbx_Debug_M_Resend.UseVisualStyleBackColor = true;
             this.Ckbx_Debug_M_Resend.CheckedChanged += new System.EventHandler(this.Ckbx_Debug_M_Resend_CheckedChanged);
             // 
-            // Pal_Debug_MutilCycleSet
+            // panel1
             // 
-            this.Pal_Debug_MutilCycleSet.Controls.Add(this.Tbx_Debug_M_Resend_Time);
-            this.Pal_Debug_MutilCycleSet.Controls.Add(this.Lab_Debug_MutilCycle);
-            this.Pal_Debug_MutilCycleSet.Controls.Add(this.Lab_Debug_MutilCycleUnit);
-            this.Pal_Debug_MutilCycleSet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pal_Debug_MutilCycleSet.Location = new System.Drawing.Point(580, 100);
-            this.Pal_Debug_MutilCycleSet.Margin = new System.Windows.Forms.Padding(0);
-            this.Pal_Debug_MutilCycleSet.Name = "Pal_Debug_MutilCycleSet";
-            this.Pal_Debug_MutilCycleSet.Size = new System.Drawing.Size(182, 25);
-            this.Pal_Debug_MutilCycleSet.TabIndex = 64;
+            this.panel1.Controls.Add(this.Tbx_Debug_M_Resend_Time);
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.label36);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(580, 100);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(182, 25);
+            this.panel1.TabIndex = 64;
             // 
             // Tbx_Debug_M_Resend_Time
             // 
@@ -1726,23 +1652,23 @@
             this.Tbx_Debug_M_Resend_Time.TextChanged += new System.EventHandler(this.TextChange_1_1000000);
             this.Tbx_Debug_M_Resend_Time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Num);
             // 
-            // Lab_Debug_MutilCycle
+            // label35
             // 
-            this.Lab_Debug_MutilCycle.AutoSize = true;
-            this.Lab_Debug_MutilCycle.Location = new System.Drawing.Point(11, 5);
-            this.Lab_Debug_MutilCycle.Name = "Lab_Debug_MutilCycle";
-            this.Lab_Debug_MutilCycle.Size = new System.Drawing.Size(46, 14);
-            this.Lab_Debug_MutilCycle.TabIndex = 37;
-            this.Lab_Debug_MutilCycle.Text = "周期：";
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(11, 5);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(46, 14);
+            this.label35.TabIndex = 37;
+            this.label35.Text = "周期：";
             // 
-            // Lab_Debug_MutilCycleUnit
+            // label36
             // 
-            this.Lab_Debug_MutilCycleUnit.AutoSize = true;
-            this.Lab_Debug_MutilCycleUnit.Location = new System.Drawing.Point(92, 5);
-            this.Lab_Debug_MutilCycleUnit.Name = "Lab_Debug_MutilCycleUnit";
-            this.Lab_Debug_MutilCycleUnit.Size = new System.Drawing.Size(23, 14);
-            this.Lab_Debug_MutilCycleUnit.TabIndex = 39;
-            this.Lab_Debug_MutilCycleUnit.Text = "ms";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(92, 5);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(23, 14);
+            this.label36.TabIndex = 39;
+            this.label36.Text = "ms";
             // 
             // Btn_Debug_M5
             // 
@@ -2134,37 +2060,37 @@
             this.Btn_Debug_M0.UseVisualStyleBackColor = true;
             this.Btn_Debug_M0.Click += new System.EventHandler(this.Btn_Debug_M0_Click);
             // 
-            // Pal_Debug_SwitchProject
+            // panel2
             // 
-            this.Tblp_Send_M.SetColumnSpan(this.Pal_Debug_SwitchProject, 6);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Lab_Debug_Switch_ProjectTip);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_Next);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Lab_Debug_M_Page);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_Prj_Add);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Tbx_Debug_M_Go_Page);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_Add);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Lab_Debug_Sort2);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_First);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Lab_Debug_Sort1);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_Pre);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_Rmv);
-            this.Pal_Debug_SwitchProject.Controls.Add(this.Btn_Debug_M_Last);
-            this.Pal_Debug_SwitchProject.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pal_Debug_SwitchProject.Location = new System.Drawing.Point(108, 125);
-            this.Pal_Debug_SwitchProject.Margin = new System.Windows.Forms.Padding(0);
-            this.Pal_Debug_SwitchProject.Name = "Pal_Debug_SwitchProject";
-            this.Pal_Debug_SwitchProject.Size = new System.Drawing.Size(472, 28);
-            this.Pal_Debug_SwitchProject.TabIndex = 65;
+            this.Tblp_Send_M.SetColumnSpan(this.panel2, 6);
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Controls.Add(this.Btn_Debug_M_Next);
+            this.panel2.Controls.Add(this.Lab_Debug_M_Page);
+            this.panel2.Controls.Add(this.Btn_Debug_Prj_Add);
+            this.panel2.Controls.Add(this.Tbx_Debug_M_Go_Page);
+            this.panel2.Controls.Add(this.Btn_Debug_M_Add);
+            this.panel2.Controls.Add(this.label41);
+            this.panel2.Controls.Add(this.Btn_Debug_M_First);
+            this.panel2.Controls.Add(this.label40);
+            this.panel2.Controls.Add(this.Btn_Debug_M_Pre);
+            this.panel2.Controls.Add(this.Btn_Debug_M_Rmv);
+            this.panel2.Controls.Add(this.Btn_Debug_M_Last);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(108, 125);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(472, 28);
+            this.panel2.TabIndex = 65;
             // 
-            // Lab_Debug_Switch_ProjectTip
+            // label37
             // 
-            this.Lab_Debug_Switch_ProjectTip.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Lab_Debug_Switch_ProjectTip.AutoSize = true;
-            this.Lab_Debug_Switch_ProjectTip.Location = new System.Drawing.Point(33, 7);
-            this.Lab_Debug_Switch_ProjectTip.Name = "Lab_Debug_Switch_ProjectTip";
-            this.Lab_Debug_Switch_ProjectTip.Size = new System.Drawing.Size(85, 14);
-            this.Lab_Debug_Switch_ProjectTip.TabIndex = 64;
-            this.Lab_Debug_Switch_ProjectTip.Text = "双击切换项目";
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(33, 7);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(85, 14);
+            this.label37.TabIndex = 64;
+            this.label37.Text = "双击切换项目";
             // 
             // Lab_Debug_M_Page
             // 
@@ -2186,36 +2112,36 @@
             this.Tbx_Debug_M_Go_Page.Text = "1";
             this.Tbx_Debug_M_Go_Page.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Num);
             // 
-            // Lab_Debug_Sort2
+            // label41
             // 
-            this.Lab_Debug_Sort2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Lab_Debug_Sort2.AutoSize = true;
-            this.Lab_Debug_Sort2.Location = new System.Drawing.Point(448, 7);
-            this.Lab_Debug_Sort2.Name = "Lab_Debug_Sort2";
-            this.Lab_Debug_Sort2.Size = new System.Drawing.Size(20, 14);
-            this.Lab_Debug_Sort2.TabIndex = 63;
-            this.Lab_Debug_Sort2.Text = "页";
+            this.label41.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(448, 7);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(20, 14);
+            this.label41.TabIndex = 63;
+            this.label41.Text = "页";
             // 
-            // Lab_Debug_Sort1
+            // label40
             // 
-            this.Lab_Debug_Sort1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Lab_Debug_Sort1.AutoSize = true;
-            this.Lab_Debug_Sort1.Location = new System.Drawing.Point(393, 7);
-            this.Lab_Debug_Sort1.Name = "Lab_Debug_Sort1";
-            this.Lab_Debug_Sort1.Size = new System.Drawing.Size(20, 14);
-            this.Lab_Debug_Sort1.TabIndex = 62;
-            this.Lab_Debug_Sort1.Text = "第";
+            this.label40.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(393, 7);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(20, 14);
+            this.label40.TabIndex = 62;
+            this.label40.Text = "第";
             // 
-            // Pal_Debug_Operate
+            // panel3
             // 
-            this.Pal_Debug_Operate.Controls.Add(this.Btn_Debug_M_Output);
-            this.Pal_Debug_Operate.Controls.Add(this.Btn_Debug_M_Go_Page);
-            this.Pal_Debug_Operate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pal_Debug_Operate.Location = new System.Drawing.Point(580, 125);
-            this.Pal_Debug_Operate.Margin = new System.Windows.Forms.Padding(0);
-            this.Pal_Debug_Operate.Name = "Pal_Debug_Operate";
-            this.Pal_Debug_Operate.Size = new System.Drawing.Size(182, 28);
-            this.Pal_Debug_Operate.TabIndex = 66;
+            this.panel3.Controls.Add(this.Btn_Debug_M_Output);
+            this.panel3.Controls.Add(this.Btn_Debug_M_Go_Page);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(580, 125);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(182, 28);
+            this.panel3.TabIndex = 66;
             // 
             // Btn_Debug_M_Output
             // 
@@ -2247,28 +2173,28 @@
             this.label43.TabIndex = 1;
             this.label43.Text = "开发中，敬请期待。。。";
             // 
-            // Lab_Debug_Delay
+            // label33
             // 
-            this.Lab_Debug_Delay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Debug_Delay.AutoSize = true;
-            this.Lab_Debug_Delay.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_Delay.Location = new System.Drawing.Point(677, 269);
-            this.Lab_Debug_Delay.Name = "Lab_Debug_Delay";
-            this.Lab_Debug_Delay.Size = new System.Drawing.Size(46, 14);
-            this.Lab_Debug_Delay.TabIndex = 16;
-            this.Lab_Debug_Delay.Text = "延时：";
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label33.Location = new System.Drawing.Point(677, 269);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(46, 14);
+            this.label33.TabIndex = 16;
+            this.label33.Text = "延时：";
             // 
-            // Lab_Debug_Operate
+            // label5
             // 
-            this.Lab_Debug_Operate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Debug_Operate.AutoSize = true;
-            this.Lab_Debug_Operate.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Debug_Operate.Location = new System.Drawing.Point(619, 167);
-            this.Lab_Debug_Operate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_Debug_Operate.Name = "Lab_Debug_Operate";
-            this.Lab_Debug_Operate.Size = new System.Drawing.Size(49, 14);
-            this.Lab_Debug_Operate.TabIndex = 2;
-            this.Lab_Debug_Operate.Text = "操作：";
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("等线", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(619, 167);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 14);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "操作：";
             // 
             // Tp_DL
             // 
@@ -2278,15 +2204,15 @@
             this.Tp_DL.Controls.Add(this.Gbx_Option_Byte);
             this.Tp_DL.Controls.Add(this.Lbx_Msg_DL);
             this.Tp_DL.Controls.Add(this.Gbx_DL_Option);
-            this.Tp_DL.Controls.Add(this.Lab_DL_BaudRate);
-            this.Tp_DL.Controls.Add(this.Lab_DL_SerialNum);
+            this.Tp_DL.Controls.Add(this.label2);
+            this.Tp_DL.Controls.Add(this.label1);
             this.Tp_DL.Controls.Add(this.Tbx_DL_File_Path);
             this.Tp_DL.Controls.Add(this.Btn_DL_Erase_Chip);
             this.Tp_DL.Controls.Add(this.Btn_DL_Select_File);
             this.Tp_DL.Controls.Add(this.Btn_Serial_DL_Fresh);
             this.Tp_DL.Controls.Add(this.Btn_DL_Read_Chip_Info);
             this.Tp_DL.Controls.Add(this.Btn_DL_DownLoad_File);
-            this.Tp_DL.Controls.Add(this.Lab_DownloadFilePath);
+            this.Tp_DL.Controls.Add(this.label6);
             this.Tp_DL.Location = new System.Drawing.Point(1, 30);
             this.Tp_DL.Name = "Tp_DL";
             this.Tp_DL.Padding = new System.Windows.Forms.Padding(3);
@@ -2348,37 +2274,37 @@
             // 
             this.Gbx_Option_Byte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_UserDataByteExplain2);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_UserDataByteExplain1);
+            this.Gbx_Option_Byte.Controls.Add(this.label29);
+            this.Gbx_Option_Byte.Controls.Add(this.label30);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_User_Data2);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_User_Data1);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_UserDataByte0x2);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_UserDataByte0x1);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_UserDataByte);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByteExplain4);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByteExplain3);
+            this.Gbx_Option_Byte.Controls.Add(this.label31);
+            this.Gbx_Option_Byte.Controls.Add(this.label32);
+            this.Gbx_Option_Byte.Controls.Add(this.label28);
+            this.Gbx_Option_Byte.Controls.Add(this.label24);
+            this.Gbx_Option_Byte.Controls.Add(this.label25);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_Write_Protect4);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_Write_Protect3);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByte0x4);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByte0x3);
+            this.Gbx_Option_Byte.Controls.Add(this.label26);
+            this.Gbx_Option_Byte.Controls.Add(this.label27);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_HW_Byte);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByteExplain2);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByteExplain1);
+            this.Gbx_Option_Byte.Controls.Add(this.label21);
+            this.Gbx_Option_Byte.Controls.Add(this.label17);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_Write_Protect2);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_HardwareOptionByte0x);
+            this.Gbx_Option_Byte.Controls.Add(this.label20);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_Read_Protect);
             this.Gbx_Option_Byte.Controls.Add(this.Tbx_DL_Write_Protect1);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByte);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_HardwareOptionByteExplain);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_HardwareOptionByte);
-            this.Gbx_Option_Byte.Controls.Add(this.Btn_DetailSet);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_ReadProtectByteExplain);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_ReadProtectedByte);
+            this.Gbx_Option_Byte.Controls.Add(this.label18);
+            this.Gbx_Option_Byte.Controls.Add(this.label15);
+            this.Gbx_Option_Byte.Controls.Add(this.label16);
+            this.Gbx_Option_Byte.Controls.Add(this.button1);
+            this.Gbx_Option_Byte.Controls.Add(this.label14);
+            this.Gbx_Option_Byte.Controls.Add(this.label13);
             this.Gbx_Option_Byte.Controls.Add(this.Btn_Option_Set_Default);
             this.Gbx_Option_Byte.Controls.Add(this.Ckbx_DL_Write_Option_Byte);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByte0x2);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_WriteProtectedByte0x1);
-            this.Gbx_Option_Byte.Controls.Add(this.Lab_DL_ReadProtectByte0x);
+            this.Gbx_Option_Byte.Controls.Add(this.label23);
+            this.Gbx_Option_Byte.Controls.Add(this.label22);
+            this.Gbx_Option_Byte.Controls.Add(this.label19);
             this.Gbx_Option_Byte.Enabled = false;
             this.Gbx_Option_Byte.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Gbx_Option_Byte.Location = new System.Drawing.Point(375, 287);
@@ -2388,25 +2314,25 @@
             this.Gbx_Option_Byte.TabStop = false;
             this.Gbx_Option_Byte.Text = "选项字节";
             // 
-            // Lab_DL_UserDataByteExplain2
+            // label29
             // 
-            this.Lab_DL_UserDataByteExplain2.AutoSize = true;
-            this.Lab_DL_UserDataByteExplain2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_UserDataByteExplain2.Location = new System.Drawing.Point(260, 142);
-            this.Lab_DL_UserDataByteExplain2.Name = "Lab_DL_UserDataByteExplain2";
-            this.Lab_DL_UserDataByteExplain2.Size = new System.Drawing.Size(111, 14);
-            this.Lab_DL_UserDataByteExplain2.TabIndex = 33;
-            this.Lab_DL_UserDataByteExplain2.Text = "地址：0x1FFFF806";
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label29.Location = new System.Drawing.Point(260, 142);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(111, 14);
+            this.label29.TabIndex = 33;
+            this.label29.Text = "地址：0x1FFFF806";
             // 
-            // Lab_DL_UserDataByteExplain1
+            // label30
             // 
-            this.Lab_DL_UserDataByteExplain1.AutoSize = true;
-            this.Lab_DL_UserDataByteExplain1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_UserDataByteExplain1.Location = new System.Drawing.Point(260, 117);
-            this.Lab_DL_UserDataByteExplain1.Name = "Lab_DL_UserDataByteExplain1";
-            this.Lab_DL_UserDataByteExplain1.Size = new System.Drawing.Size(111, 14);
-            this.Lab_DL_UserDataByteExplain1.TabIndex = 29;
-            this.Lab_DL_UserDataByteExplain1.Text = "地址：0x1FFFF804";
+            this.label30.AutoSize = true;
+            this.label30.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label30.Location = new System.Drawing.Point(260, 117);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(111, 14);
+            this.label30.TabIndex = 29;
+            this.label30.Text = "地址：0x1FFFF804";
             // 
             // Tbx_DL_User_Data2
             // 
@@ -2432,54 +2358,54 @@
             this.Tbx_DL_User_Data1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tbx_DL_User_Data1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_DL_UserDataByte0x2
+            // label31
             // 
-            this.Lab_DL_UserDataByte0x2.AutoSize = true;
-            this.Lab_DL_UserDataByte0x2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_UserDataByte0x2.Location = new System.Drawing.Point(210, 142);
-            this.Lab_DL_UserDataByte0x2.Name = "Lab_DL_UserDataByte0x2";
-            this.Lab_DL_UserDataByte0x2.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_UserDataByte0x2.TabIndex = 32;
-            this.Lab_DL_UserDataByte0x2.Text = "0x";
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label31.Location = new System.Drawing.Point(210, 142);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(20, 14);
+            this.label31.TabIndex = 32;
+            this.label31.Text = "0x";
             // 
-            // Lab_DL_UserDataByte0x1
+            // label32
             // 
-            this.Lab_DL_UserDataByte0x1.AutoSize = true;
-            this.Lab_DL_UserDataByte0x1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_UserDataByte0x1.Location = new System.Drawing.Point(210, 117);
-            this.Lab_DL_UserDataByte0x1.Name = "Lab_DL_UserDataByte0x1";
-            this.Lab_DL_UserDataByte0x1.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_UserDataByte0x1.TabIndex = 31;
-            this.Lab_DL_UserDataByte0x1.Text = "0x";
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label32.Location = new System.Drawing.Point(210, 117);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(20, 14);
+            this.label32.TabIndex = 31;
+            this.label32.Text = "0x";
             // 
-            // Lab_DL_UserDataByte
+            // label28
             // 
-            this.Lab_DL_UserDataByte.AutoSize = true;
-            this.Lab_DL_UserDataByte.Location = new System.Drawing.Point(210, 95);
-            this.Lab_DL_UserDataByte.Name = "Lab_DL_UserDataByte";
-            this.Lab_DL_UserDataByte.Size = new System.Drawing.Size(98, 14);
-            this.Lab_DL_UserDataByte.TabIndex = 26;
-            this.Lab_DL_UserDataByte.Text = "用户数据字节：";
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(210, 95);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(98, 14);
+            this.label28.TabIndex = 26;
+            this.label28.Text = "用户数据字节：";
             // 
-            // Lab_DL_WriteProtectedByteExplain4
+            // label24
             // 
-            this.Lab_DL_WriteProtectedByteExplain4.AutoSize = true;
-            this.Lab_DL_WriteProtectedByteExplain4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByteExplain4.Location = new System.Drawing.Point(147, 142);
-            this.Lab_DL_WriteProtectedByteExplain4.Name = "Lab_DL_WriteProtectedByteExplain4";
-            this.Lab_DL_WriteProtectedByteExplain4.Size = new System.Drawing.Size(56, 14);
-            this.Lab_DL_WriteProtectedByteExplain4.TabIndex = 23;
-            this.Lab_DL_WriteProtectedByteExplain4.Text = "97-512K";
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label24.Location = new System.Drawing.Point(147, 142);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(56, 14);
+            this.label24.TabIndex = 23;
+            this.label24.Text = "97-512K";
             // 
-            // Lab_DL_WriteProtectedByteExplain3
+            // label25
             // 
-            this.Lab_DL_WriteProtectedByteExplain3.AutoSize = true;
-            this.Lab_DL_WriteProtectedByteExplain3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByteExplain3.Location = new System.Drawing.Point(147, 117);
-            this.Lab_DL_WriteProtectedByteExplain3.Name = "Lab_DL_WriteProtectedByteExplain3";
-            this.Lab_DL_WriteProtectedByteExplain3.Size = new System.Drawing.Size(49, 14);
-            this.Lab_DL_WriteProtectedByteExplain3.TabIndex = 22;
-            this.Lab_DL_WriteProtectedByteExplain3.Text = "65-96K";
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label25.Location = new System.Drawing.Point(147, 117);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(49, 14);
+            this.label25.TabIndex = 22;
+            this.label25.Text = "65-96K";
             // 
             // Tbx_DL_Write_Protect4
             // 
@@ -2505,25 +2431,25 @@
             this.Tbx_DL_Write_Protect3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tbx_DL_Write_Protect3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_DL_WriteProtectedByte0x4
+            // label26
             // 
-            this.Lab_DL_WriteProtectedByte0x4.AutoSize = true;
-            this.Lab_DL_WriteProtectedByte0x4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByte0x4.Location = new System.Drawing.Point(101, 142);
-            this.Lab_DL_WriteProtectedByte0x4.Name = "Lab_DL_WriteProtectedByte0x4";
-            this.Lab_DL_WriteProtectedByte0x4.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_WriteProtectedByte0x4.TabIndex = 25;
-            this.Lab_DL_WriteProtectedByte0x4.Text = "0x";
+            this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label26.Location = new System.Drawing.Point(101, 142);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(20, 14);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "0x";
             // 
-            // Lab_DL_WriteProtectedByte0x3
+            // label27
             // 
-            this.Lab_DL_WriteProtectedByte0x3.AutoSize = true;
-            this.Lab_DL_WriteProtectedByte0x3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByte0x3.Location = new System.Drawing.Point(101, 117);
-            this.Lab_DL_WriteProtectedByte0x3.Name = "Lab_DL_WriteProtectedByte0x3";
-            this.Lab_DL_WriteProtectedByte0x3.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_WriteProtectedByte0x3.TabIndex = 24;
-            this.Lab_DL_WriteProtectedByte0x3.Text = "0x";
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label27.Location = new System.Drawing.Point(101, 117);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(20, 14);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "0x";
             // 
             // Tbx_DL_HW_Byte
             // 
@@ -2537,25 +2463,25 @@
             this.Tbx_DL_HW_Byte.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tbx_DL_HW_Byte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_DL_WriteProtectedByteExplain2
+            // label21
             // 
-            this.Lab_DL_WriteProtectedByteExplain2.AutoSize = true;
-            this.Lab_DL_WriteProtectedByteExplain2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByteExplain2.Location = new System.Drawing.Point(52, 142);
-            this.Lab_DL_WriteProtectedByteExplain2.Name = "Lab_DL_WriteProtectedByteExplain2";
-            this.Lab_DL_WriteProtectedByteExplain2.Size = new System.Drawing.Size(49, 14);
-            this.Lab_DL_WriteProtectedByteExplain2.TabIndex = 16;
-            this.Lab_DL_WriteProtectedByteExplain2.Text = "33-64K";
+            this.label21.AutoSize = true;
+            this.label21.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label21.Location = new System.Drawing.Point(52, 142);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(49, 14);
+            this.label21.TabIndex = 16;
+            this.label21.Text = "33-64K";
             // 
-            // Lab_DL_WriteProtectedByteExplain1
+            // label17
             // 
-            this.Lab_DL_WriteProtectedByteExplain1.AutoSize = true;
-            this.Lab_DL_WriteProtectedByteExplain1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByteExplain1.Location = new System.Drawing.Point(52, 117);
-            this.Lab_DL_WriteProtectedByteExplain1.Name = "Lab_DL_WriteProtectedByteExplain1";
-            this.Lab_DL_WriteProtectedByteExplain1.Size = new System.Drawing.Size(42, 14);
-            this.Lab_DL_WriteProtectedByteExplain1.TabIndex = 15;
-            this.Lab_DL_WriteProtectedByteExplain1.Text = "0-32K";
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label17.Location = new System.Drawing.Point(52, 117);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(42, 14);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "0-32K";
             // 
             // Tbx_DL_Write_Protect2
             // 
@@ -2569,15 +2495,15 @@
             this.Tbx_DL_Write_Protect2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tbx_DL_Write_Protect2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_DL_HardwareOptionByte0x
+            // label20
             // 
-            this.Lab_DL_HardwareOptionByte0x.AutoSize = true;
-            this.Lab_DL_HardwareOptionByte0x.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_HardwareOptionByte0x.Location = new System.Drawing.Point(210, 71);
-            this.Lab_DL_HardwareOptionByte0x.Name = "Lab_DL_HardwareOptionByte0x";
-            this.Lab_DL_HardwareOptionByte0x.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_HardwareOptionByte0x.TabIndex = 13;
-            this.Lab_DL_HardwareOptionByte0x.Text = "0x";
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label20.Location = new System.Drawing.Point(210, 71);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 14);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "0x";
             // 
             // Tbx_DL_Read_Protect
             // 
@@ -2603,61 +2529,61 @@
             this.Tbx_DL_Write_Protect1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tbx_DL_Write_Protect1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_DL_WriteProtectedByte
+            // label18
             // 
-            this.Lab_DL_WriteProtectedByte.AutoSize = true;
-            this.Lab_DL_WriteProtectedByte.Location = new System.Drawing.Point(6, 95);
-            this.Lab_DL_WriteProtectedByte.Name = "Lab_DL_WriteProtectedByte";
-            this.Lab_DL_WriteProtectedByte.Size = new System.Drawing.Size(85, 14);
-            this.Lab_DL_WriteProtectedByte.TabIndex = 10;
-            this.Lab_DL_WriteProtectedByte.Text = "写保护字节：";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 95);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(85, 14);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "写保护字节：";
             // 
-            // Lab_DL_HardwareOptionByteExplain
+            // label15
             // 
-            this.Lab_DL_HardwareOptionByteExplain.AutoSize = true;
-            this.Lab_DL_HardwareOptionByteExplain.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_HardwareOptionByteExplain.Location = new System.Drawing.Point(260, 71);
-            this.Lab_DL_HardwareOptionByteExplain.Name = "Lab_DL_HardwareOptionByteExplain";
-            this.Lab_DL_HardwareOptionByteExplain.Size = new System.Drawing.Size(135, 14);
-            this.Lab_DL_HardwareOptionByteExplain.TabIndex = 8;
-            this.Lab_DL_HardwareOptionByteExplain.Text = "bit0=0使能硬件看门狗";
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label15.Location = new System.Drawing.Point(260, 71);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(135, 14);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "bit0=0使能硬件看门狗";
             // 
-            // Lab_DL_HardwareOptionByte
+            // label16
             // 
-            this.Lab_DL_HardwareOptionByte.AutoSize = true;
-            this.Lab_DL_HardwareOptionByte.Location = new System.Drawing.Point(210, 47);
-            this.Lab_DL_HardwareOptionByte.Name = "Lab_DL_HardwareOptionByte";
-            this.Lab_DL_HardwareOptionByte.Size = new System.Drawing.Size(98, 14);
-            this.Lab_DL_HardwareOptionByte.TabIndex = 7;
-            this.Lab_DL_HardwareOptionByte.Text = "硬件选项字节：";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(210, 47);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(98, 14);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "硬件选项字节：";
             // 
-            // Btn_DetailSet
+            // button1
             // 
-            this.Btn_DetailSet.Location = new System.Drawing.Point(305, 17);
-            this.Btn_DetailSet.Name = "Btn_DetailSet";
-            this.Btn_DetailSet.Size = new System.Drawing.Size(90, 23);
-            this.Btn_DetailSet.TabIndex = 19;
-            this.Btn_DetailSet.Text = "详细设置";
-            this.Btn_DetailSet.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(305, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "详细设置";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // Lab_DL_ReadProtectByteExplain
+            // label14
             // 
-            this.Lab_DL_ReadProtectByteExplain.AutoSize = true;
-            this.Lab_DL_ReadProtectByteExplain.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_ReadProtectByteExplain.Location = new System.Drawing.Point(57, 71);
-            this.Lab_DL_ReadProtectByteExplain.Name = "Lab_DL_ReadProtectByteExplain";
-            this.Lab_DL_ReadProtectByteExplain.Size = new System.Drawing.Size(122, 14);
-            this.Lab_DL_ReadProtectByteExplain.TabIndex = 4;
-            this.Lab_DL_ReadProtectByteExplain.Text = "0x5A:可读 0xFF;禁读";
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label14.Location = new System.Drawing.Point(57, 71);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 14);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "0x5A:可读 0xFF;禁读";
             // 
-            // Lab_DL_ReadProtectedByte
+            // label13
             // 
-            this.Lab_DL_ReadProtectedByte.AutoSize = true;
-            this.Lab_DL_ReadProtectedByte.Location = new System.Drawing.Point(6, 47);
-            this.Lab_DL_ReadProtectedByte.Name = "Lab_DL_ReadProtectedByte";
-            this.Lab_DL_ReadProtectedByte.Size = new System.Drawing.Size(85, 14);
-            this.Lab_DL_ReadProtectedByte.TabIndex = 3;
-            this.Lab_DL_ReadProtectedByte.Text = "读保护字节：";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 47);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 14);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "读保护字节：";
             // 
             // Btn_Option_Set_Default
             // 
@@ -2679,35 +2605,35 @@
             this.Ckbx_DL_Write_Option_Byte.Text = "下载时写选项字节";
             this.Ckbx_DL_Write_Option_Byte.UseVisualStyleBackColor = true;
             // 
-            // Lab_DL_WriteProtectedByte0x2
+            // label23
             // 
-            this.Lab_DL_WriteProtectedByte0x2.AutoSize = true;
-            this.Lab_DL_WriteProtectedByte0x2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByte0x2.Location = new System.Drawing.Point(6, 142);
-            this.Lab_DL_WriteProtectedByte0x2.Name = "Lab_DL_WriteProtectedByte0x2";
-            this.Lab_DL_WriteProtectedByte0x2.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_WriteProtectedByte0x2.TabIndex = 18;
-            this.Lab_DL_WriteProtectedByte0x2.Text = "0x";
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label23.Location = new System.Drawing.Point(6, 142);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(20, 14);
+            this.label23.TabIndex = 18;
+            this.label23.Text = "0x";
             // 
-            // Lab_DL_WriteProtectedByte0x1
+            // label22
             // 
-            this.Lab_DL_WriteProtectedByte0x1.AutoSize = true;
-            this.Lab_DL_WriteProtectedByte0x1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_WriteProtectedByte0x1.Location = new System.Drawing.Point(6, 117);
-            this.Lab_DL_WriteProtectedByte0x1.Name = "Lab_DL_WriteProtectedByte0x1";
-            this.Lab_DL_WriteProtectedByte0x1.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_WriteProtectedByte0x1.TabIndex = 17;
-            this.Lab_DL_WriteProtectedByte0x1.Text = "0x";
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label22.Location = new System.Drawing.Point(6, 117);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 14);
+            this.label22.TabIndex = 17;
+            this.label22.Text = "0x";
             // 
-            // Lab_DL_ReadProtectByte0x
+            // label19
             // 
-            this.Lab_DL_ReadProtectByte0x.AutoSize = true;
-            this.Lab_DL_ReadProtectByte0x.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lab_DL_ReadProtectByte0x.Location = new System.Drawing.Point(6, 71);
-            this.Lab_DL_ReadProtectByte0x.Name = "Lab_DL_ReadProtectByte0x";
-            this.Lab_DL_ReadProtectByte0x.Size = new System.Drawing.Size(20, 14);
-            this.Lab_DL_ReadProtectByte0x.TabIndex = 12;
-            this.Lab_DL_ReadProtectByte0x.Text = "0x";
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label19.Location = new System.Drawing.Point(6, 71);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(20, 14);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "0x";
             // 
             // Lbx_Msg_DL
             // 
@@ -2735,16 +2661,16 @@
             this.Gbx_DL_Option.Controls.Add(this.Ckbx_DL_Show_Time);
             this.Gbx_DL_Option.Controls.Add(this.Ckbx_DL_Auto_Close_Debug_Port);
             this.Gbx_DL_Option.Controls.Add(this.Cbx_Auto_DL);
-            this.Gbx_DL_Option.Controls.Add(this.Lab_EraseWay);
+            this.Gbx_DL_Option.Controls.Add(this.label9);
             this.Gbx_DL_Option.Controls.Add(this.Tbx_DL_Adress);
             this.Gbx_DL_Option.Controls.Add(this.Rbtn_Erase_Part);
             this.Gbx_DL_Option.Controls.Add(this.Ckbx_Check);
             this.Gbx_DL_Option.Controls.Add(this.Ckbx_Auto_Match);
             this.Gbx_DL_Option.Controls.Add(this.Rbtn_Erase_All);
             this.Gbx_DL_Option.Controls.Add(this.Cbx_Go_BL_Way);
-            this.Gbx_DL_Option.Controls.Add(this.Lab_DownloadStartAddress);
+            this.Gbx_DL_Option.Controls.Add(this.label7);
             this.Gbx_DL_Option.Controls.Add(this.Tbx_Run_Adress);
-            this.Gbx_DL_Option.Controls.Add(this.Lab_ProgramRunAddress);
+            this.Gbx_DL_Option.Controls.Add(this.label8);
             this.Gbx_DL_Option.Controls.Add(this.Ckbx_DL_After_Dir_Run);
             this.Gbx_DL_Option.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Gbx_DL_Option.Location = new System.Drawing.Point(374, 118);
@@ -2786,14 +2712,14 @@
             this.Cbx_Auto_DL.Text = "自动下载";
             this.Cbx_Auto_DL.UseVisualStyleBackColor = true;
             // 
-            // Lab_EraseWay
+            // label9
             // 
-            this.Lab_EraseWay.AutoSize = true;
-            this.Lab_EraseWay.Location = new System.Drawing.Point(7, 136);
-            this.Lab_EraseWay.Name = "Lab_EraseWay";
-            this.Lab_EraseWay.Size = new System.Drawing.Size(72, 14);
-            this.Lab_EraseWay.TabIndex = 109;
-            this.Lab_EraseWay.Text = "擦除方式：";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 136);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 14);
+            this.label9.TabIndex = 109;
+            this.label9.Text = "擦除方式：";
             // 
             // Tbx_DL_Adress
             // 
@@ -2882,15 +2808,15 @@
             this.Cbx_Go_BL_Way.Size = new System.Drawing.Size(305, 22);
             this.Cbx_Go_BL_Way.TabIndex = 6;
             // 
-            // Lab_DownloadStartAddress
+            // label7
             // 
-            this.Lab_DownloadStartAddress.AutoSize = true;
-            this.Lab_DownloadStartAddress.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_DownloadStartAddress.Location = new System.Drawing.Point(5, 54);
-            this.Lab_DownloadStartAddress.Name = "Lab_DownloadStartAddress";
-            this.Lab_DownloadStartAddress.Size = new System.Drawing.Size(111, 14);
-            this.Lab_DownloadStartAddress.TabIndex = 7;
-            this.Lab_DownloadStartAddress.Text = "下载起始地址：0x";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(5, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 14);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "下载起始地址：0x";
             // 
             // Tbx_Run_Adress
             // 
@@ -2904,15 +2830,15 @@
             this.Tbx_Run_Adress.Text = "08000000";
             this.Tbx_Run_Adress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Allow_Hex);
             // 
-            // Lab_ProgramRunAddress
+            // label8
             // 
-            this.Lab_ProgramRunAddress.AutoSize = true;
-            this.Lab_ProgramRunAddress.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_ProgramRunAddress.Location = new System.Drawing.Point(206, 53);
-            this.Lab_ProgramRunAddress.Name = "Lab_ProgramRunAddress";
-            this.Lab_ProgramRunAddress.Size = new System.Drawing.Size(111, 14);
-            this.Lab_ProgramRunAddress.TabIndex = 7;
-            this.Lab_ProgramRunAddress.Text = "程序运行地址：0x";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Location = new System.Drawing.Point(206, 53);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 14);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "程序运行地址：0x";
             // 
             // Ckbx_DL_After_Dir_Run
             // 
@@ -2927,27 +2853,27 @@
             this.Ckbx_DL_After_Dir_Run.Text = "下载后直接跳转运行";
             this.Ckbx_DL_After_Dir_Run.UseVisualStyleBackColor = true;
             // 
-            // Lab_DL_BaudRate
+            // label2
             // 
-            this.Lab_DL_BaudRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_DL_BaudRate.AutoSize = true;
-            this.Lab_DL_BaudRate.Location = new System.Drawing.Point(575, 14);
-            this.Lab_DL_BaudRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_DL_BaudRate.Name = "Lab_DL_BaudRate";
-            this.Lab_DL_BaudRate.Size = new System.Drawing.Size(97, 15);
-            this.Lab_DL_BaudRate.TabIndex = 116;
-            this.Lab_DL_BaudRate.Text = "下载波特率：";
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(575, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 15);
+            this.label2.TabIndex = 116;
+            this.label2.Text = "下载波特率：";
             // 
-            // Lab_DL_SerialNum
+            // label1
             // 
-            this.Lab_DL_SerialNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_DL_SerialNum.AutoSize = true;
-            this.Lab_DL_SerialNum.Location = new System.Drawing.Point(373, 14);
-            this.Lab_DL_SerialNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lab_DL_SerialNum.Name = "Lab_DL_SerialNum";
-            this.Lab_DL_SerialNum.Size = new System.Drawing.Size(67, 15);
-            this.Lab_DL_SerialNum.TabIndex = 111;
-            this.Lab_DL_SerialNum.Text = "串口号：";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(373, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.TabIndex = 111;
+            this.label1.Text = "串口号：";
             // 
             // Tbx_DL_File_Path
             // 
@@ -3003,205 +2929,195 @@
             this.Btn_DL_DownLoad_File.UseVisualStyleBackColor = true;
             this.Btn_DL_DownLoad_File.Click += new System.EventHandler(this.Btn_DL_DownLoad_File_Click);
             // 
-            // Lab_DownloadFilePath
+            // label6
             // 
-            this.Lab_DownloadFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_DownloadFilePath.AutoSize = true;
-            this.Lab_DownloadFilePath.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_DownloadFilePath.Location = new System.Drawing.Point(376, 39);
-            this.Lab_DownloadFilePath.Name = "Lab_DownloadFilePath";
-            this.Lab_DownloadFilePath.Size = new System.Drawing.Size(98, 14);
-            this.Lab_DownloadFilePath.TabIndex = 108;
-            this.Lab_DownloadFilePath.Text = "下载文件路径：";
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(376, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 14);
+            this.label6.TabIndex = 108;
+            this.label6.Text = "下载文件路径：";
             // 
             // Tp_Tools
             // 
-            this.Tp_Tools.Controls.Add(this.TlPal_Tools);
+            this.Tp_Tools.Controls.Add(this.Tc_Tools);
             this.Tp_Tools.Location = new System.Drawing.Point(1, 30);
             this.Tp_Tools.Name = "Tp_Tools";
             this.Tp_Tools.Padding = new System.Windows.Forms.Padding(3);
             this.Tp_Tools.Size = new System.Drawing.Size(782, 482);
             this.Tp_Tools.TabIndex = 5;
-            this.Tp_Tools.Text = "工具箱";
+            this.Tp_Tools.Text = "小工具";
             this.Tp_Tools.UseVisualStyleBackColor = true;
             // 
-            // TlPal_Tools
+            // Tc_Tools
             // 
-            this.TlPal_Tools.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TlPal_Tools.ColumnCount = 6;
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TlPal_Tools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_FileEncryptionDecrypt, 2, 2);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_TTS, 1, 2);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_FontCreate, 0, 2);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_CalcTransf, 0, 1);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_FileMerge, 1, 1);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_BinEditor, 2, 1);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_CodeFormat, 3, 1);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_QrCode, 4, 1);
-            this.TlPal_Tools.Controls.Add(this.label1, 0, 0);
-            this.TlPal_Tools.Controls.Add(this.label2, 0, 4);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_FileTimeAlter, 3, 2);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_ResourceList, 4, 2);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_GeekUninstaller, 0, 5);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_FolderPainter, 1, 5);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_EmptyFolderNuker, 2, 5);
-            this.TlPal_Tools.Controls.Add(this.Btn_Tools_ToolsPanel, 5, 0);
-            this.TlPal_Tools.Location = new System.Drawing.Point(3, 3);
-            this.TlPal_Tools.Name = "TlPal_Tools";
-            this.TlPal_Tools.RowCount = 10;
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TlPal_Tools.Size = new System.Drawing.Size(776, 476);
-            this.TlPal_Tools.TabIndex = 13;
+            this.Tc_Tools.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.Tc_Tools.Controls.Add(this.Tp_CalcTrasf);
+            this.Tc_Tools.Controls.Add(this.Tp_BinEditor);
+            this.Tc_Tools.Controls.Add(this.Tp_CodeFormat);
+            this.Tc_Tools.Controls.Add(this.Tp_QrCode);
+            this.Tc_Tools.Controls.Add(this.Tp_ChineseCharacter);
+            this.Tc_Tools.Controls.Add(this.Tp_TTS);
+            this.Tc_Tools.Controls.Add(this.Tp_FileMerge);
+            this.Tc_Tools.Controls.Add(this.Tp_FileEncrypt);
+            this.Tc_Tools.Controls.Add(this.Tp_Source);
+            this.Tc_Tools.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Tc_Tools.Location = new System.Drawing.Point(3, 3);
+            this.Tc_Tools.Name = "Tc_Tools";
+            this.Tc_Tools.SelectedIndex = 0;
+            this.Tc_Tools.Size = new System.Drawing.Size(776, 476);
+            this.Tc_Tools.TabIndex = 11;
             // 
-            // Btn_Tools_FileEncryptionDecrypt
+            // Tp_CalcTrasf
             // 
-            this.Btn_Tools_FileEncryptionDecrypt.Location = new System.Drawing.Point(301, 97);
-            this.Btn_Tools_FileEncryptionDecrypt.Name = "Btn_Tools_FileEncryptionDecrypt";
-            this.Btn_Tools_FileEncryptionDecrypt.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_FileEncryptionDecrypt.TabIndex = 23;
-            this.Btn_Tools_FileEncryptionDecrypt.Text = "文件加密/解密";
-            this.Btn_Tools_FileEncryptionDecrypt.UseVisualStyleBackColor = true;
-            this.Btn_Tools_FileEncryptionDecrypt.Click += new System.EventHandler(this.Btn_Tools_FileEncryptionDecrypt_Click);
+            this.Tp_CalcTrasf.Controls.Add(this.splitContainer1);
+            this.Tp_CalcTrasf.Location = new System.Drawing.Point(4, 28);
+            this.Tp_CalcTrasf.Name = "Tp_CalcTrasf";
+            this.Tp_CalcTrasf.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_CalcTrasf.Size = new System.Drawing.Size(768, 444);
+            this.Tp_CalcTrasf.TabIndex = 0;
+            this.Tp_CalcTrasf.Text = "计算/转换";
+            this.Tp_CalcTrasf.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_TTS
+            // splitContainer1
             // 
-            this.Btn_Tools_TTS.Location = new System.Drawing.Point(152, 97);
-            this.Btn_Tools_TTS.Name = "Btn_Tools_TTS";
-            this.Btn_Tools_TTS.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_TTS.TabIndex = 22;
-            this.Btn_Tools_TTS.Text = "语音合成（TTS）";
-            this.Btn_Tools_TTS.UseVisualStyleBackColor = true;
-            this.Btn_Tools_TTS.Click += new System.EventHandler(this.Btn_Tools_TTS_Click);
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // Btn_Tools_FontCreate
+            // splitContainer1.Panel1
             // 
-            this.Btn_Tools_FontCreate.Location = new System.Drawing.Point(3, 97);
-            this.Btn_Tools_FontCreate.Name = "Btn_Tools_FontCreate";
-            this.Btn_Tools_FontCreate.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_FontCreate.TabIndex = 21;
-            this.Btn_Tools_FontCreate.Text = "汉字库";
-            this.Btn_Tools_FontCreate.UseVisualStyleBackColor = true;
-            this.Btn_Tools_FontCreate.Click += new System.EventHandler(this.Btn_Tools_FontCreate_Click);
+            this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.listBox1);
+            this.splitContainer1.Panel1MinSize = 230;
+            this.splitContainer1.Panel2MinSize = 400;
+            this.splitContainer1.Size = new System.Drawing.Size(762, 438);
+            this.splitContainer1.SplitterDistance = 230;
+            this.splitContainer1.TabIndex = 10;
             // 
-            // Btn_Tools_CalcTransf
+            // groupBox1
             // 
-            this.Btn_Tools_CalcTransf.Location = new System.Drawing.Point(3, 50);
-            this.Btn_Tools_CalcTransf.Name = "Btn_Tools_CalcTransf";
-            this.Btn_Tools_CalcTransf.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_CalcTransf.TabIndex = 0;
-            this.Btn_Tools_CalcTransf.Text = "计算/转换";
-            this.Btn_Tools_CalcTransf.UseVisualStyleBackColor = true;
-            this.Btn_Tools_CalcTransf.Click += new System.EventHandler(this.Btn_Tools_CalcTransf_Click);
+            this.groupBox1.Location = new System.Drawing.Point(171, 114);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(8, 8);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // Btn_Tools_FileMerge
+            // listBox1
             // 
-            this.Btn_Tools_FileMerge.Location = new System.Drawing.Point(152, 50);
-            this.Btn_Tools_FileMerge.Name = "Btn_Tools_FileMerge";
-            this.Btn_Tools_FileMerge.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_FileMerge.TabIndex = 1;
-            this.Btn_Tools_FileMerge.Text = "文件合并";
-            this.Btn_Tools_FileMerge.UseVisualStyleBackColor = true;
-            this.Btn_Tools_FileMerge.Click += new System.EventHandler(this.Btn_Tools_FileMerge_Click);
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Items.AddRange(new object[] {
+            "00：校验和",
+            "01：XOR异或",
+            "02：CRC8",
+            "03：CRC16",
+            "04：CRC32",
+            "05：字符串MD5",
+            "06：文件MD5（选择文件路径）",
+            "07：BASE64编码（字符串）",
+            "08：BASE64解码（字符串）",
+            "09：进制转换",
+            "10：GBK转UNICODE",
+            "11：UNICODE转GBK",
+            "12：mm转mil",
+            "13：mil转mm",
+            "14：文件转C数组",
+            "15：AES字符串加密",
+            "16：AES字符串解密",
+            "17：时间戳->字符串",
+            "18：字符串->时间戳"});
+            this.listBox1.Location = new System.Drawing.Point(0, 0);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(228, 436);
+            this.listBox1.TabIndex = 0;
             // 
-            // Btn_Tools_BinEditor
+            // Tp_BinEditor
             // 
-            this.Btn_Tools_BinEditor.Location = new System.Drawing.Point(301, 50);
-            this.Btn_Tools_BinEditor.Name = "Btn_Tools_BinEditor";
-            this.Btn_Tools_BinEditor.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_BinEditor.TabIndex = 1;
-            this.Btn_Tools_BinEditor.Text = "二进制编辑器";
-            this.Btn_Tools_BinEditor.UseVisualStyleBackColor = true;
-            this.Btn_Tools_BinEditor.Click += new System.EventHandler(this.Btn_Tools_BinEditor_Click);
+            this.Tp_BinEditor.Location = new System.Drawing.Point(4, 28);
+            this.Tp_BinEditor.Name = "Tp_BinEditor";
+            this.Tp_BinEditor.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_BinEditor.Size = new System.Drawing.Size(768, 444);
+            this.Tp_BinEditor.TabIndex = 1;
+            this.Tp_BinEditor.Text = "二进制编辑器";
+            this.Tp_BinEditor.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_CodeFormat
+            // Tp_CodeFormat
             // 
-            this.Btn_Tools_CodeFormat.Location = new System.Drawing.Point(450, 50);
-            this.Btn_Tools_CodeFormat.Name = "Btn_Tools_CodeFormat";
-            this.Btn_Tools_CodeFormat.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_CodeFormat.TabIndex = 2;
-            this.Btn_Tools_CodeFormat.Text = "代码格式化";
-            this.Btn_Tools_CodeFormat.UseVisualStyleBackColor = true;
-            this.Btn_Tools_CodeFormat.Click += new System.EventHandler(this.Btn_Tools_CodeFormat_Click);
+            this.Tp_CodeFormat.Location = new System.Drawing.Point(4, 28);
+            this.Tp_CodeFormat.Name = "Tp_CodeFormat";
+            this.Tp_CodeFormat.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_CodeFormat.Size = new System.Drawing.Size(768, 444);
+            this.Tp_CodeFormat.TabIndex = 2;
+            this.Tp_CodeFormat.Text = "代码格式化";
+            this.Tp_CodeFormat.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_QrCode
+            // Tp_QrCode
             // 
-            this.Btn_Tools_QrCode.Location = new System.Drawing.Point(599, 50);
-            this.Btn_Tools_QrCode.Name = "Btn_Tools_QrCode";
-            this.Btn_Tools_QrCode.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_QrCode.TabIndex = 3;
-            this.Btn_Tools_QrCode.Text = "二维码/条形码";
-            this.Btn_Tools_QrCode.UseVisualStyleBackColor = true;
-            this.Btn_Tools_QrCode.Click += new System.EventHandler(this.Btn_Tools_QrCode_Click);
+            this.Tp_QrCode.Location = new System.Drawing.Point(4, 28);
+            this.Tp_QrCode.Name = "Tp_QrCode";
+            this.Tp_QrCode.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_QrCode.Size = new System.Drawing.Size(768, 444);
+            this.Tp_QrCode.TabIndex = 3;
+            this.Tp_QrCode.Text = "二维码生成";
+            this.Tp_QrCode.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // Tp_ChineseCharacter
             // 
-            this.TlPal_Tools.SetColumnSpan(this.label1, 5);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("等线", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(739, 47);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "工具集合";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Tp_ChineseCharacter.Location = new System.Drawing.Point(4, 28);
+            this.Tp_ChineseCharacter.Name = "Tp_ChineseCharacter";
+            this.Tp_ChineseCharacter.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_ChineseCharacter.Size = new System.Drawing.Size(768, 444);
+            this.Tp_ChineseCharacter.TabIndex = 4;
+            this.Tp_ChineseCharacter.Text = "汉字库";
+            this.Tp_ChineseCharacter.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // Tp_TTS
             // 
-            this.TlPal_Tools.SetColumnSpan(this.label2, 5);
-            this.label2.Font = new System.Drawing.Font("等线", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 188);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(739, 47);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "内置软件";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Tp_TTS.Location = new System.Drawing.Point(4, 28);
+            this.Tp_TTS.Name = "Tp_TTS";
+            this.Tp_TTS.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_TTS.Size = new System.Drawing.Size(768, 444);
+            this.Tp_TTS.TabIndex = 5;
+            this.Tp_TTS.Text = "文字转语音（TTS）";
+            this.Tp_TTS.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_FileTimeAlter
+            // Tp_FileMerge
             // 
-            this.Btn_Tools_FileTimeAlter.Location = new System.Drawing.Point(450, 97);
-            this.Btn_Tools_FileTimeAlter.Name = "Btn_Tools_FileTimeAlter";
-            this.Btn_Tools_FileTimeAlter.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_FileTimeAlter.TabIndex = 25;
-            this.Btn_Tools_FileTimeAlter.Text = "文件时间修改器";
-            this.Btn_Tools_FileTimeAlter.UseVisualStyleBackColor = true;
-            this.Btn_Tools_FileTimeAlter.Click += new System.EventHandler(this.Btn_Tools_FileTimeAlter_Click);
+            this.Tp_FileMerge.Location = new System.Drawing.Point(4, 28);
+            this.Tp_FileMerge.Name = "Tp_FileMerge";
+            this.Tp_FileMerge.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_FileMerge.Size = new System.Drawing.Size(768, 444);
+            this.Tp_FileMerge.TabIndex = 6;
+            this.Tp_FileMerge.Text = "文件合并";
+            this.Tp_FileMerge.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_ResourceList
+            // Tp_FileEncrypt
             // 
-            this.Btn_Tools_ResourceList.Location = new System.Drawing.Point(599, 97);
-            this.Btn_Tools_ResourceList.Name = "Btn_Tools_ResourceList";
-            this.Btn_Tools_ResourceList.Size = new System.Drawing.Size(143, 41);
-            this.Btn_Tools_ResourceList.TabIndex = 24;
-            this.Btn_Tools_ResourceList.Text = "资源列表";
-            this.Btn_Tools_ResourceList.UseVisualStyleBackColor = true;
-            this.Btn_Tools_ResourceList.Click += new System.EventHandler(this.Btn_Tools_ResourceList_Click);
+            this.Tp_FileEncrypt.Location = new System.Drawing.Point(4, 28);
+            this.Tp_FileEncrypt.Name = "Tp_FileEncrypt";
+            this.Tp_FileEncrypt.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_FileEncrypt.Size = new System.Drawing.Size(768, 444);
+            this.Tp_FileEncrypt.TabIndex = 7;
+            this.Tp_FileEncrypt.Text = "文件加密";
+            this.Tp_FileEncrypt.UseVisualStyleBackColor = true;
             // 
-            // Btn_Tools_ToolsPanel
+            // Tp_Source
             // 
-            this.Btn_Tools_ToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_Tools_ToolsPanel.Location = new System.Drawing.Point(748, 3);
-            this.Btn_Tools_ToolsPanel.Name = "Btn_Tools_ToolsPanel";
-            this.TlPal_Tools.SetRowSpan(this.Btn_Tools_ToolsPanel, 10);
-            this.Btn_Tools_ToolsPanel.Size = new System.Drawing.Size(25, 470);
-            this.Btn_Tools_ToolsPanel.TabIndex = 27;
-            this.Btn_Tools_ToolsPanel.Text = ">-打开工具面板->";
-            this.Btn_Tools_ToolsPanel.UseVisualStyleBackColor = true;
-            this.Btn_Tools_ToolsPanel.Click += new System.EventHandler(this.Btn_Tools_ToolsPanel_Click);
+            this.Tp_Source.Location = new System.Drawing.Point(4, 28);
+            this.Tp_Source.Name = "Tp_Source";
+            this.Tp_Source.Padding = new System.Windows.Forms.Padding(3);
+            this.Tp_Source.Size = new System.Drawing.Size(768, 444);
+            this.Tp_Source.TabIndex = 8;
+            this.Tp_Source.Text = "资源列表";
+            this.Tp_Source.UseVisualStyleBackColor = true;
             // 
             // Tp_Code
             // 
@@ -3292,15 +3208,10 @@
             // 
             // Tp_Help
             // 
-            this.Tp_Help.Controls.Add(this.Llab_PersonHomePage);
-            this.Tp_Help.Controls.Add(this.Llab_PersonEmail);
-            this.Tp_Help.Controls.Add(this.Tbx_Help);
-            this.Tp_Help.Controls.Add(this.Lab_Personal_Elucidation);
-            this.Tp_Help.Controls.Add(this.Lab_Copyright);
-            this.Tp_Help.Controls.Add(this.Lab_Donate);
-            this.Tp_Help.Controls.Add(this.Pbx_Wxpay);
-            this.Tp_Help.Controls.Add(this.Pbx_Alipay);
-            this.Tp_Help.Controls.Add(this.Pbx_SWORLD);
+            this.Tp_Help.Controls.Add(this.linkLabel1);
+            this.Tp_Help.Controls.Add(this.pictureBox1);
+            this.Tp_Help.Controls.Add(this.label42);
+            this.Tp_Help.Controls.Add(this.textBox14);
             this.Tp_Help.Location = new System.Drawing.Point(1, 30);
             this.Tp_Help.Name = "Tp_Help";
             this.Tp_Help.Padding = new System.Windows.Forms.Padding(3);
@@ -3309,94 +3220,57 @@
             this.Tp_Help.Text = "帮助";
             this.Tp_Help.UseVisualStyleBackColor = true;
             // 
-            // Llab_PersonHomePage
+            // linkLabel1
             // 
-            this.Llab_PersonHomePage.ActiveLinkColor = System.Drawing.Color.DimGray;
-            this.Llab_PersonHomePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Llab_PersonHomePage.AutoSize = true;
-            this.Llab_PersonHomePage.Font = new System.Drawing.Font("等线", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Llab_PersonHomePage.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.Llab_PersonHomePage.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.Llab_PersonHomePage.Location = new System.Drawing.Point(660, 144);
-            this.Llab_PersonHomePage.Name = "Llab_PersonHomePage";
-            this.Llab_PersonHomePage.Size = new System.Drawing.Size(112, 15);
-            this.Llab_PersonHomePage.TabIndex = 14;
-            this.Llab_PersonHomePage.TabStop = true;
-            this.Llab_PersonHomePage.Text = "www.sworld.top";
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("等线", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(656, 192);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(112, 15);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "www.sworld.top";
             // 
-            // Llab_PersonEmail
+            // pictureBox1
             // 
-            this.Llab_PersonEmail.ActiveLinkColor = System.Drawing.Color.DimGray;
-            this.Llab_PersonEmail.AutoSize = true;
-            this.Llab_PersonEmail.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Llab_PersonEmail.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.Llab_PersonEmail.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.Llab_PersonEmail.Location = new System.Drawing.Point(653, 162);
-            this.Llab_PersonEmail.Name = "Llab_PersonEmail";
-            this.Llab_PersonEmail.Size = new System.Drawing.Size(123, 14);
-            this.Llab_PersonEmail.TabIndex = 19;
-            this.Llab_PersonEmail.TabStop = true;
-            this.Llab_PersonEmail.Text = "970076933@qq.com";
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::SWorld_Downloader.Properties.Resources.SWORLD;
+            this.pictureBox1.Location = new System.Drawing.Point(648, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
-            // Tbx_Help
+            // label42
             // 
-            this.Tbx_Help.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(668, 146);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(88, 30);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Same World\r\n@SWORLD";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Tbx_Help.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Tbx_Help.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Tbx_Help.Location = new System.Drawing.Point(3, 3);
-            this.Tbx_Help.Multiline = true;
-            this.Tbx_Help.Name = "Tbx_Help";
-            this.Tbx_Help.ReadOnly = true;
-            this.Tbx_Help.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Tbx_Help.Size = new System.Drawing.Size(647, 476);
-            this.Tbx_Help.TabIndex = 11;
-            this.Tbx_Help.Text = resources.GetString("Tbx_Help.Text");
-            // 
-            // Lab_Personal_Elucidation
-            // 
-            this.Lab_Personal_Elucidation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Personal_Elucidation.AutoSize = true;
-            this.Lab_Personal_Elucidation.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Personal_Elucidation.Location = new System.Drawing.Point(647, 180);
-            this.Lab_Personal_Elucidation.Name = "Lab_Personal_Elucidation";
-            this.Lab_Personal_Elucidation.Size = new System.Drawing.Size(137, 14);
-            this.Lab_Personal_Elucidation.TabIndex = 18;
-            this.Lab_Personal_Elucidation.Text = "永远保持一颗学徒的心";
-            // 
-            // Lab_Copyright
-            // 
-            this.Lab_Copyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Copyright.AutoSize = true;
-            this.Lab_Copyright.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Lab_Copyright.Location = new System.Drawing.Point(678, 129);
-            this.Lab_Copyright.Name = "Lab_Copyright";
-            this.Lab_Copyright.Size = new System.Drawing.Size(76, 14);
-            this.Lab_Copyright.TabIndex = 12;
-            this.Lab_Copyright.Text = "Same World";
-            // 
-            // Lab_Donate
-            // 
-            this.Lab_Donate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lab_Donate.AutoSize = true;
-            this.Lab_Donate.Location = new System.Drawing.Point(697, 212);
-            this.Lab_Donate.Name = "Lab_Donate";
-            this.Lab_Donate.Size = new System.Drawing.Size(37, 15);
-            this.Lab_Donate.TabIndex = 16;
-            this.Lab_Donate.Text = "捐赠";
-            // 
-            // Pbx_SWORLD
-            // 
-            this.Pbx_SWORLD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pbx_SWORLD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pbx_SWORLD.Image = global::SWORLD开发助手.Properties.Resources.SWORLD;
-            this.Pbx_SWORLD.Location = new System.Drawing.Point(656, 6);
-            this.Pbx_SWORLD.Name = "Pbx_SWORLD";
-            this.Pbx_SWORLD.Size = new System.Drawing.Size(120, 120);
-            this.Pbx_SWORLD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pbx_SWORLD.TabIndex = 13;
-            this.Pbx_SWORLD.TabStop = false;
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Font = new System.Drawing.Font("等线", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox14.Location = new System.Drawing.Point(3, 3);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox14.Size = new System.Drawing.Size(639, 476);
+            this.textBox14.TabIndex = 11;
+            this.textBox14.Text = resources.GetString("textBox14.Text");
             // 
             // Main
             // 
@@ -3420,24 +3294,22 @@
             this.Ts_Bottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Fix)).EndInit();
             this.Cms_Send_Prj.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Wxpay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Alipay)).EndInit();
             this.Tc_Main.ResumeLayout(false);
             this.Tp_Debug.ResumeLayout(false);
             this.Tp_Debug.PerformLayout();
-            this.Pal_Debug_Serial_Option.ResumeLayout(false);
-            this.Pal_Debug_Serial_Option.PerformLayout();
+            this.Pal_Serial_Option.ResumeLayout(false);
+            this.Pal_Serial_Option.PerformLayout();
             this.Tc_Debug.ResumeLayout(false);
             this.Tp_Debug_Send_One.ResumeLayout(false);
             this.Tp_Debug_Send_One.PerformLayout();
             this.Tp_Debug_Send_More.ResumeLayout(false);
             this.Tblp_Send_M.ResumeLayout(false);
             this.Tblp_Send_M.PerformLayout();
-            this.Pal_Debug_MutilCycleSet.ResumeLayout(false);
-            this.Pal_Debug_MutilCycleSet.PerformLayout();
-            this.Pal_Debug_SwitchProject.ResumeLayout(false);
-            this.Pal_Debug_SwitchProject.PerformLayout();
-            this.Pal_Debug_Operate.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.Tp_Debug_Send_Protocol.ResumeLayout(false);
             this.Tp_Debug_Send_Protocol.PerformLayout();
             this.Tp_DL.ResumeLayout(false);
@@ -3447,7 +3319,11 @@
             this.Gbx_DL_Option.ResumeLayout(false);
             this.Gbx_DL_Option.PerformLayout();
             this.Tp_Tools.ResumeLayout(false);
-            this.TlPal_Tools.ResumeLayout(false);
+            this.Tc_Tools.ResumeLayout(false);
+            this.Tp_CalcTrasf.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.Tp_Code.ResumeLayout(false);
             this.Spc_Code_Lib.Panel1.ResumeLayout(false);
             this.Spc_Code_Lib.Panel1.PerformLayout();
@@ -3461,7 +3337,7 @@
             this.Spc_DL.ResumeLayout(false);
             this.Tp_Help.ResumeLayout(false);
             this.Tp_Help.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbx_SWORLD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3472,8 +3348,8 @@
         private System.IO.Ports.SerialPort Sp_DownLoad;
         private System.Windows.Forms.TabPage Tp_Debug;
         private System.Windows.Forms.TabPage Tp_DL;
-        private System.Windows.Forms.Label Lab_Debug_StopBit;
-        private System.Windows.Forms.Label Lab_Debug_Operate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Btn_Debug_Open_Serial;
         private System.Windows.Forms.CheckBox Ckbx_Debug_Show_Hex;
         private System.Windows.Forms.CheckBox Ckbx_Debug_DTR;
@@ -3484,7 +3360,7 @@
         private System.Windows.Forms.TabPage Tp_Type;
         private System.Windows.Forms.ToolStrip Ts_Bottom;
         private System.Windows.Forms.ComboBox Cbx_Debug_BaudRate;
-        private System.Windows.Forms.Label Lab_Debug_BaudRate;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripLabel Tstbx_Serial_Stat;
         private System.Windows.Forms.ToolStripLabel Tstbx_Serial_Stat_Img;
         private System.Windows.Forms.ToolStripLabel Tbx_Time_Show;
@@ -3496,15 +3372,15 @@
         private System.Windows.Forms.ComboBox CBx_Debug_DataBit;
         private System.Windows.Forms.ComboBox Cbx_Debug_StopBit;
         private System.Windows.Forms.ComboBox Cbx_Debug_Seiral_Num;
-        private System.Windows.Forms.Label Lab_Debug_SerialNum;
-        private System.Windows.Forms.Label Lab_Debug_CheckBit;
-        private System.Windows.Forms.Label Lab_Debug_DataBit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ToolStripMenuItem TsBtn_Bottom_Calc;
         private System.Windows.Forms.ToolStripMenuItem TsBtn_Bottom_Note;
         private System.Windows.Forms.ToolStripDropDownButton Tsdbtn_Set;
         private System.Windows.Forms.ToolStripMenuItem TsBtn_HMI_Set;
         private System.Windows.Forms.ToolStripMenuItem TsBtn_Help;
-        private System.Windows.Forms.Label Lab_Debug_Delay;
+        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox Cbx_Debug_RTS_Delay;
         private Control.TabControlPlus Tc_Main;
         private System.Windows.Forms.TabPage Tp_Help;
@@ -3514,58 +3390,58 @@
         private System.Windows.Forms.TextBox Tbx_Debug_Send_One;
         private System.Windows.Forms.Button Btn_Debug_Send;
         private System.Windows.Forms.GroupBox Gbx_Option_Byte;
-        private System.Windows.Forms.Label Lab_DL_UserDataByteExplain2;
-        private System.Windows.Forms.Label Lab_DL_UserDataByteExplain1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox Tbx_DL_User_Data2;
         private System.Windows.Forms.TextBox Tbx_DL_User_Data1;
-        private System.Windows.Forms.Label Lab_DL_UserDataByte0x2;
-        private System.Windows.Forms.Label Lab_DL_UserDataByte0x1;
-        private System.Windows.Forms.Label Lab_DL_UserDataByte;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByteExplain4;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByteExplain3;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox Tbx_DL_Write_Protect4;
         private System.Windows.Forms.TextBox Tbx_DL_Write_Protect3;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByte0x4;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByte0x3;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox Tbx_DL_HW_Byte;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByteExplain2;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByteExplain1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox Tbx_DL_Write_Protect2;
-        private System.Windows.Forms.Label Lab_DL_HardwareOptionByte0x;
+        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox Tbx_DL_Read_Protect;
         private System.Windows.Forms.TextBox Tbx_DL_Write_Protect1;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByte;
-        private System.Windows.Forms.Label Lab_DL_HardwareOptionByteExplain;
-        private System.Windows.Forms.Label Lab_DL_HardwareOptionByte;
-        private System.Windows.Forms.Button Btn_DetailSet;
-        private System.Windows.Forms.Label Lab_DL_ReadProtectByteExplain;
-        private System.Windows.Forms.Label Lab_DL_ReadProtectedByte;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button Btn_Option_Set_Default;
         private System.Windows.Forms.CheckBox Ckbx_DL_Write_Option_Byte;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByte0x2;
-        private System.Windows.Forms.Label Lab_DL_WriteProtectedByte0x1;
-        private System.Windows.Forms.Label Lab_DL_ReadProtectByte0x;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox Gbx_DL_Option;
         private System.Windows.Forms.CheckBox Ckbx_DL_Auto_Close_Debug_Port;
         private System.Windows.Forms.CheckBox Cbx_Auto_DL;
-        private System.Windows.Forms.Label Lab_EraseWay;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Tbx_DL_Adress;
         private System.Windows.Forms.RadioButton Rbtn_Erase_Part;
         private System.Windows.Forms.CheckBox Ckbx_Check;
         private System.Windows.Forms.CheckBox Ckbx_Auto_Match;
         private System.Windows.Forms.RadioButton Rbtn_Erase_All;
         private System.Windows.Forms.ComboBox Cbx_Go_BL_Way;
-        private System.Windows.Forms.Label Lab_DownloadStartAddress;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Tbx_Run_Adress;
-        private System.Windows.Forms.Label Lab_ProgramRunAddress;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox Ckbx_DL_After_Dir_Run;
         private System.Windows.Forms.Button Btn_Serial_DL_Fresh;
-        private System.Windows.Forms.Label Lab_DownloadFilePath;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox Cbx_DL_BaudRate;
         private System.Windows.Forms.ComboBox Cbx_DL_Serial_Num;
-        private System.Windows.Forms.Label Lab_DL_BaudRate;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Tbx_DL_File_Path;
-        private System.Windows.Forms.Label Lab_DL_SerialNum;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Btn_DL_Select_File;
         private System.Windows.Forms.Button Btn_DL_DownLoad_File;
         private System.Windows.Forms.Button Btn_DL_Read_Chip_Info;
@@ -3590,8 +3466,8 @@
         private System.Windows.Forms.CheckBox Ckbx_Debug_Send_NewLine;
         private System.Windows.Forms.CheckBox Ckbx_Debug_Send_Hex;
         private System.Windows.Forms.TextBox Tbx_Debug_Resend_Time;
-        private System.Windows.Forms.Label Lab_Debug_CycleUnit;
-        private System.Windows.Forms.Label Lab_Debug_Cycle;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
         private System.Windows.Forms.CheckBox Ckbx_Debug_Send_Ontime;
         private System.Windows.Forms.TextBox Tbx_Debug_Send_File_Name;
         private System.Windows.Forms.Timer Tmr_Debug_Recv;
@@ -3606,7 +3482,7 @@
         private System.Windows.Forms.CheckBox Ckbx_Debug_Show_Time;
         private System.Windows.Forms.Label Lab_Debug_Task_Process;
         private System.Windows.Forms.ProgressBar Pgb_Debug_Task_Process;
-        private System.Windows.Forms.Panel Pal_Debug_Serial_Option;
+        private System.Windows.Forms.Panel Pal_Serial_Option;
         private System.Windows.Forms.TextBox Tbx_Msg_Debug;
         private System.Windows.Forms.Timer Tmr_Debug_ReSend;
         private System.Windows.Forms.ToolStripLabel Tlab_DSR_Val;
@@ -3650,16 +3526,16 @@
         private System.Windows.Forms.TextBox Tbx_Debug_M0;
         private System.Windows.Forms.ListBox Lbx_Debug_Project;
         private System.Windows.Forms.CheckBox Ckbx_Debug_M_Send_NewLine;
-        private System.Windows.Forms.Label Lab_Debug_MutilCycleUnit;
+        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox Tbx_Debug_M_Resend_Time;
-        private System.Windows.Forms.Label Lab_Debug_MutilCycle;
+        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.CheckBox Ckbx_Debug_M_Resend;
         private System.Windows.Forms.CheckBox Ckbx_Debug_M_Con_NumKey;
         private System.Windows.Forms.CheckBox Ckbx_Debug_M_Send_Hex;
         private System.Windows.Forms.TextBox Tbx_Debug_Project;
         private System.Windows.Forms.TextBox Tbx_Debug_M_Go_Page;
-        private System.Windows.Forms.Label Lab_Debug_Sort2;
-        private System.Windows.Forms.Label Lab_Debug_Sort1;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Button Btn_Debug_M_Rmv;
         private System.Windows.Forms.Button Btn_Debug_M_Go_Page;
         private System.Windows.Forms.Button Btn_Debug_M_Last;
@@ -3669,17 +3545,17 @@
         private System.Windows.Forms.Button Btn_Debug_M_Add;
         private System.Windows.Forms.Button Btn_Debug_M_Output;
         private System.Windows.Forms.Label Lab_Debug_M_Page;
-        private System.Windows.Forms.TextBox Tbx_Help;
-        private System.Windows.Forms.Label Lab_Copyright;
-        private System.Windows.Forms.PictureBox Pbx_SWORLD;
-        private System.Windows.Forms.LinkLabel Llab_PersonHomePage;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TableLayoutPanel Tblp_Send_M;
-        private System.Windows.Forms.Panel Pal_Debug_MutilCycleSet;
-        private System.Windows.Forms.Panel Pal_Debug_SwitchProject;
-        private System.Windows.Forms.Panel Pal_Debug_Operate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Btn_Debug_Prj_Add;
         private System.Windows.Forms.ToolStripMenuItem TsBtn_Exit;
-        private System.Windows.Forms.Label Lab_Debug_Switch_ProjectTip;
+        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Timer Tmr_Debug_Resend_M;
         private System.Windows.Forms.ContextMenuStrip Cms_Send_Prj;
         private System.Windows.Forms.ToolStripMenuItem CmsBtn_Send_Prj_Swch;
@@ -3701,29 +3577,19 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.CheckBox Ckbx_Set_Read_Protect;
         private System.Windows.Forms.TabPage Tp_Tools;
-        private System.Windows.Forms.TableLayoutPanel TlPal_Tools;
-        private System.Windows.Forms.Button Btn_Tools_CalcTransf;
-        private System.Windows.Forms.Button Btn_Tools_FileMerge;
-        private System.Windows.Forms.Button Btn_Tools_BinEditor;
-        private System.Windows.Forms.Button Btn_Tools_CodeFormat;
-        private System.Windows.Forms.Button Btn_Tools_QrCode;
-        private System.Windows.Forms.Button Btn_Tools_FileTimeAlter;
-        private System.Windows.Forms.Button Btn_Tools_ResourceList;
-        private System.Windows.Forms.Button Btn_Tools_FileEncryptionDecrypt;
-        private System.Windows.Forms.Button Btn_Tools_TTS;
-        private System.Windows.Forms.Button Btn_Tools_FontCreate;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Btn_Tools_GeekUninstaller;
-        private System.Windows.Forms.Button Btn_Tools_FolderPainter;
-        private System.Windows.Forms.Button Btn_Tools_EmptyFolderNuker;
-        private System.Windows.Forms.Button Btn_Tools_ToolsPanel;
-        private System.Windows.Forms.Label Lab_Donate;
-        private System.Windows.Forms.PictureBox Pbx_Wxpay;
-        private System.Windows.Forms.PictureBox Pbx_Alipay;
-        private System.Windows.Forms.Label Lab_Personal_Elucidation;
-        private System.Windows.Forms.LinkLabel Llab_PersonEmail;
-        private System.Windows.Forms.ToolStripMenuItem TsBtn_Bottom_ControlPanle;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TabControl Tc_Tools;
+        private System.Windows.Forms.TabPage Tp_CalcTrasf;
+        private System.Windows.Forms.TabPage Tp_BinEditor;
+        private System.Windows.Forms.TabPage Tp_CodeFormat;
+        private System.Windows.Forms.TabPage Tp_QrCode;
+        private System.Windows.Forms.TabPage Tp_ChineseCharacter;
+        private System.Windows.Forms.TabPage Tp_TTS;
+        private System.Windows.Forms.TabPage Tp_FileMerge;
+        private System.Windows.Forms.TabPage Tp_FileEncrypt;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TabPage Tp_Source;
     }
 }
 

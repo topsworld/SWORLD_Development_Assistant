@@ -1,4 +1,4 @@
-﻿using SWORLD开发助手.Model;
+﻿using SWorld_Downloader.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SWORLD开发助手.Class
+namespace SWorld_Downloader.Class
 {
     public class Cls_Update
     {

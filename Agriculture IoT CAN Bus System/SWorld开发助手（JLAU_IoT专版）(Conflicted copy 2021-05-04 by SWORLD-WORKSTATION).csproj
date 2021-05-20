@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Agriculture_IoT_CAN_Bus_System</RootNamespace>
+    <AssemblyName>SWorld开发助手（JLAU_IoT专版）</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\swlogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Class\Cls_Check_ALG.cs" />
+    <Compile Include="My_Class\Cls_Config_Helper.cs" />
+    <Compile Include="My_Class\Cls_Convert.cs" />
+    <Compile Include="My_Class\Cls_FTP.cs" />
+    <Compile Include="My_Class\Cls_Login.cs" />
+    <Compile Include="My_Class\Cls_Parse.cs" />
+    <Compile Include="My_Class\Cls_Serial.cs" />
+    <Compile Include="My_Class\Cls_UnZip.cs" />
+    <Compile Include="My_Class\Cls_Update.cs" />
+    <Compile Include="My_Class\Cls_USBWatcher.cs" />
+    <Compile Include="My_Control\My_ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Firmware_Add_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Firmware_Add_Edit.Designer.cs">
+      <DependentUpon>Frm_Firmware_Add_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Form\Frm_Firmware_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Firmware_Management.Designer.cs">
+      <DependentUpon>Frm_Firmware_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Form\Frm_Group_Add_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Group_Add_Edit.Designer.cs">
+      <DependentUpon>Frm_Group_Add_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Form\Frm_Type_Add_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Type_Add_Edit.Designer.cs">
+      <DependentUpon>Frm_Type_Add_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Form\Frm_Version_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Form\Frm_Version_Info.Designer.cs">
+      <DependentUpon>Frm_Version_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Model\Board_Info.cs" />
+    <Compile Include="My_Model\JSON_Model.cs" />
+    <Compile Include="My_Model\Sys_Config.cs" />
+    <Compile Include="My_Model\Version_Info.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Form\Frm_Firmware_Add_Edit.resx">
+      <DependentUpon>Frm_Firmware_Add_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Form\Frm_Firmware_Management.resx">
+      <DependentUpon>Frm_Firmware_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Form\Frm_Group_Add_Edit.resx">
+      <DependentUpon>Frm_Group_Add_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Form\Frm_Type_Add_Edit.resx">
+      <DependentUpon>Frm_Type_Add_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Form\Frm_Version_Info.resx">
+      <DependentUpon>Frm_Version_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="My_Data\Sys_Config.json" />
+    <EmbeddedResource Include="My_Data\Firmware.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errmsg20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swlogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firmware_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firmware_Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firmware_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My_Data\Update_Soft.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

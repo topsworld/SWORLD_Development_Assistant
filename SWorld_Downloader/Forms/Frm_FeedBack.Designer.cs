@@ -1,4 +1,4 @@
-﻿namespace SWORLD开发助手.Forms
+﻿namespace SWorld_Downloader.Forms
 {
     partial class Frm_FeedBack
     {

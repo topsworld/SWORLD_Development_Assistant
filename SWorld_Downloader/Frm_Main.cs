@@ -1,5 +1,5 @@
-﻿using SWORLD开发助手.Class;
-using SWORLD开发助手.Model;
+﻿using SWorld_Downloader.Class;
+using SWorld_Downloader.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SWORLD开发助手
+namespace SWorld_Downloader
 {
     public partial class Main : Form
     {
@@ -85,12 +85,6 @@ namespace SWORLD开发助手
         /// </summary>
         Thread Th_Update=null;
 
-
-        //MDI窗体
-        Frm_MDI _frmmdi = new Frm_MDI();
-        // 设置工具窗体属性
-        ToolsOwn.MagneticManager _mmmdi ;
-
         public Main()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint  //全部在窗口绘制消息中绘图
@@ -107,13 +101,6 @@ namespace SWORLD开发助手
             }
 
             UsbNotification.RegisterUsbDeviceNotification(this.Handle);//添加串口监听事件
-
-            // 磁吸窗体设置
-            _mmmdi = new ToolsOwn.MagneticManager(this);
-            _mmmdi.addChild(_frmmdi, ToolsOwn.MagneticLocation.Right);
-            _frmmdi.Owner = this;
-            // 设置初始位置
-            _frmmdi.Location= new Point(this.Right - 12, this.Top);
         }
 
         /// <summary>
@@ -135,11 +122,11 @@ namespace SWORLD开发助手
                             if (!Serial_List_Check(_lsi, Cbx_Debug_Seiral_Num.Items[i].ToString()))
                             {
                                 //需要判断该串口是否为打开状态  是打开状态 则需要关闭串口
-                                if (Pal_Debug_Serial_Option.Enabled == false
+                                if (Pal_Serial_Option.Enabled == false
                                     &&Cbx_Debug_Seiral_Num.Text== Cbx_Debug_Seiral_Num.Items[i].ToString())
                                 {
                                     Debug_Serial_Close();
-                                    Pal_Debug_Serial_Option.Enabled = true;
+                                    Pal_Serial_Option.Enabled = true;
                                     Btn_Debug_Open_Serial.Text = "打开串口";
                                     Btn_Debug_Open_Serial.Image = Properties.Resources.used20;
                                 }
@@ -198,7 +185,7 @@ namespace SWORLD开发助手
         /// </summary>
         private void Soft_Init()
         {
-            _ds_STM32BL=Cls_XML.ExtractResXML("SWORLD开发助手.Data.STM32BL.xml");//获取STM32BL列表
+            _ds_STM32BL=Cls_XML.ExtractResXML("SWorld_Downloader.Data.STM32BL.xml");//获取STM32BL列表
             Tbx_Time_Show.Text = DateTime.Now.ToString("yyyy年MM月dd日 hh:mm:ss");//显示最新时间
             this.Serial_DL_StataChange += new EventHandler(this.Sp_Main_Serial_DL_StataChange);//下载串口状态监视事件
             this.Serial_Debug_StataChange += new EventHandler(this.Sp_Main_Serial_Debug_StataChange);//调试串口状态监视事件
@@ -595,29 +582,22 @@ namespace SWORLD开发助手
         /// <param name="_msg"></param>
         public void Show_Btm_Msg(string _msg,int _type=0)
         {
-            try
+            Tc_Main.BeginInvoke(new Action(()=>
             {
-                Tc_Main.BeginInvoke(new Action(() =>
+                Tstbx_Serial_Stat.Text = _msg;
+                switch (_type)
                 {
-                    Tstbx_Serial_Stat.Text = _msg;
-                    switch (_type)
-                    {
-                        case 0:
-                            Tstbx_Serial_Stat_Img.BackgroundImage = Properties.Resources.msg20;
-                            break;
-                        case 1:
-                            Tstbx_Serial_Stat_Img.BackgroundImage = Properties.Resources.errmsg20;
-                            break;
-                    }
-
-                    Tmr_Btm_Msg.Stop();
-                    Tmr_Btm_Msg.Start();
-                }));
-            }
-            catch
-            {
-
-            }
+                    case 0:
+                        Tstbx_Serial_Stat_Img.BackgroundImage = Properties.Resources.msg20;
+                        break;
+                    case 1:
+                        Tstbx_Serial_Stat_Img.BackgroundImage = Properties.Resources.errmsg20;
+                        break;
+                }
+                
+                Tmr_Btm_Msg.Stop();
+                Tmr_Btm_Msg.Start();
+            }));
         }
 
         /// <summary>
@@ -871,7 +851,7 @@ namespace SWORLD开发助手
         {
             Sp_Debug.Open();
             Serial_Debug_StataChange?.BeginInvoke(Sp_Debug, null,null,null);
-            Pal_Debug_Serial_Option.Enabled = false;
+            Pal_Serial_Option.Enabled = false;
             Btn_Debug_Open_Serial.Text = "关闭串口";
             Btn_Debug_Open_Serial.Image = Properties.Resources.open20;
         }
@@ -889,7 +869,7 @@ namespace SWORLD开发助手
             //Sp_Debug.DiscardOutBuffer();
             //Sp_Debug.DiscardInBuffer();
             Sp_Debug.Close();
-            Pal_Debug_Serial_Option.Enabled = true;
+            Pal_Serial_Option.Enabled = true;
             Btn_Debug_Open_Serial.Text = "打开串口";
             Btn_Debug_Open_Serial.Image = Properties.Resources.close20;
             Serial_Debug_StataChange?.BeginInvoke(Sp_Debug, null, null, null);
@@ -3499,19 +3479,6 @@ namespace SWORLD开发助手
             catch { }
         }
         /// <summary>
-        /// 打开控制面板
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void TsBtn_Bottom_ControlPanle_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start("Control");
-            }
-            catch { }
-        }
-        /// <summary>
         /// 底部消息栏刷新
         /// </summary>
         /// <param name="sender"></param>
@@ -3585,281 +3552,9 @@ namespace SWORLD开发助手
             Forms.Frm_FeedBack _fb = new Forms.Frm_FeedBack();
             _fb.ShowDialog();
         }
-
         #endregion
 
-        #region 小工具按钮
-        /// <summary>
-        /// 计算转换按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_CalcTransf_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_CalcTransf"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_CalcTransf");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_CalcTransf _ucct = new ToolsOwn.UC_Tools_CalcTransf();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_CalcTransf", "计算/转换");
-                _frmmdi.SetSelectPage("Tp_Tools_CalcTransf");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 文件合并按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_FileMerge_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_FileMerge"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_FileMerge");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_FileMerge _ucct = new ToolsOwn.UC_Tools_FileMerge();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_FileMerge", "文件合并");
-                _frmmdi.SetSelectPage("Tp_Tools_FileMerge");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 二进制编辑器按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_BinEditor_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_BinEditor"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_BinEditor");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_BinEditor _ucct = new ToolsOwn.UC_Tools_BinEditor();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_BinEditor", "二进制编辑器");
-                _frmmdi.SetSelectPage("Tp_Tools_BinEditor");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 代码格式化按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_CodeFormat_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_CodeFormat"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_CodeFormat");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_CodeFormat _ucct = new ToolsOwn.UC_Tools_CodeFormat();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_CodeFormat", "代码格式化");
-                _frmmdi.SetSelectPage("Tp_Tools_CodeFormat");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 二维码/条形码按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_QrCode_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_QrCode"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_QrCode");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_QrCode _ucct = new ToolsOwn.UC_Tools_QrCode();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_QrCode", "二维码/条形码");
-                _frmmdi.SetSelectPage("Tp_Tools_QrCode");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 汉字库按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_FontCreate_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_FontCreate"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_FontCreate");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_FontCreate _ucct = new ToolsOwn.UC_Tools_FontCreate();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_FontCreate", "汉字库");
-                _frmmdi.SetSelectPage("Tp_Tools_FontCreate");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 语音合成（TTS）
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_TTS_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_TTS"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_TTS");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_TTS _ucct = new ToolsOwn.UC_Tools_TTS();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_TTS", "语音合成（TTS）");
-                _frmmdi.SetSelectPage("Tp_Tools_TTS");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 文件加密解密按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_FileEncryptionDecrypt_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_FileEncryptionDecrypt"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_FileEncryptionDecrypt");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_FileEncrypDecrypt _ucct = new ToolsOwn.UC_Tools_FileEncrypDecrypt();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_FileEncryptionDecrypt", "文件加密解密");
-                _frmmdi.SetSelectPage("Tp_Tools_FileEncryptionDecrypt");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 文件时间修改按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_FileTimeAlter_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_FileTimeAlter"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_FileTimeAlter");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_FileTimeAlter _ucct = new ToolsOwn.UC_Tools_FileTimeAlter();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_FileTimeAlter", "文件时间修改");
-                _frmmdi.SetSelectPage("Tp_Tools_FileTimeAlter");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 资源列表按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_ResourceList_Click(object sender, EventArgs e)
-        {
-            if (_frmmdi.IsExsitToolsFrm("Tp_Tools_ResourceList"))
-            {
-                _frmmdi.SetSelectPage("Tp_Tools_ResourceList");
-            }
-            else
-            {
-                ToolsOwn.UC_Tools_ResourceList _ucct = new ToolsOwn.UC_Tools_ResourceList();
-                _frmmdi.AddToolsTab(_ucct, "Tp_Tools_ResourceList", "资源列表");
-                _frmmdi.SetSelectPage("Tp_Tools_ResourceList");
-            }
-            // 设置状态
-            _frmmdi.Show();
-            Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-        }
-        /// <summary>
-        /// 软件卸载工具
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_GeekUninstaller_Click(object sender, EventArgs e)
-        {
-
-        }
-        /// <summary>
-        /// 文件夹图标修改工具
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_FolderPainter_Click(object sender, EventArgs e)
-        {
-
-        }
-        /// <summary>
-        /// 清除空文件夹工具
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_EmptyFolderNuker_Click(object sender, EventArgs e)
-        {
-
-        }
-        /// <summary>
-        /// 工具面板
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Tools_ToolsPanel_Click(object sender, EventArgs e)
-        {
-            if (Btn_Tools_ToolsPanel.Text.Contains("关闭"))
-            {
-                _frmmdi.Hide();
-                Btn_Tools_ToolsPanel.Text = ">-打开工具面板->";
-            }
-            else
-            {
-                // 无打开工具事，默认打开第一项。
-                if (_frmmdi.GetPageCount() == 0)
-                {
-                    Btn_Tools_CalcTransf_Click(null,null);
-                }
-                Btn_Tools_ToolsPanel.Text = "<-关闭工具面板-<";
-                _frmmdi.Show();
-
-            }
-        }
-        /// <summary>
-        /// 关闭工具面板
-        /// </summary>
-        public void SetToolsPanleStatu()
-        {
-            Btn_Tools_ToolsPanel.Text = ">-打开工具面板->";
-        }
-
-        #endregion
-
+        
     }
 
 }

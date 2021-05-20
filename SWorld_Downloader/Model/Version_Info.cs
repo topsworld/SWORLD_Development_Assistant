@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SWORLD开发助手.Model
+namespace SWorld_Downloader.Model
 {
     public class Version_Info
     {

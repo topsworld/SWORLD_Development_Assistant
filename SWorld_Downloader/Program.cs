@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SWORLD开发助手
+namespace SWorld_Downloader
 {
     static class Program
     {

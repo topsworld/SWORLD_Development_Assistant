@@ -7,7 +7,7 @@
     <ProjectGuid>{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Agriculture_IoT_CAN_Bus_System</RootNamespace>
-    <AssemblyName>SWorld开发助手（JLAU_IoT专版）</AssemblyName>
+    <AssemblyName>SWORLD开发助手（JLAU_IoT专版）</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

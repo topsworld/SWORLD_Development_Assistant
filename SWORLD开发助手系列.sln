@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWORLD开发助手", "SWorld_Downloader\SWORLD开发助手.csproj", "{BD905283-48B3-404C-9D26-E2017E575A8F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMap_Demo", "GMap_Demo\GMap_Demo.csproj", "{1FB07643-599D-4229-A5F1-86217CB5FBE1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWORLD开发助手（JLAU_IoT专版）", "Agriculture IoT CAN Bus System\SWORLD开发助手（JLAU_IoT专版）.csproj", "{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update_Soft_Client", "Update_Soft\Update_Soft_Client.csproj", "{53AC9817-73E4-488B-B75D-FF858FFA7A9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWORLD版本管理助手", "SWORLD版本管理助手\SWORLD版本管理助手.csproj", "{36243235-42E3-4A7E-B1EE-26F1DFC2CD94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWORLD开发助手", "SWORLD开发助手\SWORLD开发助手.csproj", "{BD905283-48B3-404C-9D26-E2017E575A8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD905283-48B3-404C-9D26-E2017E575A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD905283-48B3-404C-9D26-E2017E575A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD905283-48B3-404C-9D26-E2017E575A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD905283-48B3-404C-9D26-E2017E575A8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FB07643-599D-4229-A5F1-86217CB5FBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FB07643-599D-4229-A5F1-86217CB5FBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FB07643-599D-4229-A5F1-86217CB5FBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FB07643-599D-4229-A5F1-86217CB5FBE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C327B7B8-3628-4BC1-B1E2-2E89405C0F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53AC9817-73E4-488B-B75D-FF858FFA7A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53AC9817-73E4-488B-B75D-FF858FFA7A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53AC9817-73E4-488B-B75D-FF858FFA7A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +23,10 @@ Global
 		{36243235-42E3-4A7E-B1EE-26F1DFC2CD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36243235-42E3-4A7E-B1EE-26F1DFC2CD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36243235-42E3-4A7E-B1EE-26F1DFC2CD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD905283-48B3-404C-9D26-E2017E575A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD905283-48B3-404C-9D26-E2017E575A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD905283-48B3-404C-9D26-E2017E575A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD905283-48B3-404C-9D26-E2017E575A8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

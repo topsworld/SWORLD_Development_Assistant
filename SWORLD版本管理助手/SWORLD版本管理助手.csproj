@@ -53,8 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClasss\SFTPHelper.cs" />
-    <Compile Include="MyClasss\SSHHelper.cs" />
+    <Compile Include="MyClass\SFTPHelper.cs" />
+    <Compile Include="MyClass\SSHHelper.cs" />
     <Compile Include="Frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>

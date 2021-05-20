@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SWORLD开发助手.Control
+namespace SWorld_Downloader.Control
 {
     public class ListBoxPlus:ListBox
     {

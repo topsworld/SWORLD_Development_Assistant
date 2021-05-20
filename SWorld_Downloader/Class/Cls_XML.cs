@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace SWORLD开发助手.Class
+namespace SWorld_Downloader.Class
 {
     public class Cls_XML
     {
@@ -52,7 +52,7 @@ namespace SWORLD开发助手.Class
             try
             {
                 Assembly asm = Assembly.GetExecutingAssembly(); //读取嵌入式资源
-                inStream = new BufferedStream(asm.GetManifestResourceStream("SWORLD开发助手.Data.Update_Soft.exe"));
+                inStream = new BufferedStream(asm.GetManifestResourceStream("SWorld_Downloader.Data.Update_Soft.exe"));
                 outStream = new FileStream("Update_Soft.exe", FileMode.Create, FileAccess.Write);
 
                 byte[] buffer = new byte[1024];
